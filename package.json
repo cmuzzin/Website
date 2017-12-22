@@ -21,7 +21,13 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angularfire2": "^5.0.0-rc.3",
+    "bulma": "^0.6.1",
     "core-js": "^2.4.1",
+    "firebase": "^4.8.1",
+    "firebase-functions": "^0.7.5",
+    "firebase-tools": "^3.16.0",
+    "font-awesome": "^4.7.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
