@@ -1,5 +1,5 @@
 <div class="container-fluid ">
-  <section class="hero is-info is-medium">
+  <section class="hero is-info is-small">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -45,12 +45,12 @@
 
   <div class="box cta">
     <p class="has-text-centered">
-      dsadsadadasf sfdsfdsfsd ffdsf fsdfsdffds
+      Skip to the point? <a class="is-link is-info">Resume Here</a>
     </p>
   </div>
 
   <section id="skills" class="container">
-    <h2 class="title has-text-centered">Skills</h2>
+    <h2 class="title has-text-centered">Skills & Experience</h2>
     <div class="columns push-around">
       <div class="column is-4">
         <div class="card has-text-centered">
@@ -91,8 +91,8 @@
             <div class="content">
               <h2 class="title is-3">UX</h2>
               <ul>
-                <li>Process flows, mock-ups, wire frames</li>
-                <li>Photoshop, Illustrator, and Balasmic</li>
+                <li>Process flow / mock-ups / wire frames</li>
+                <li>Photoshop / Illustrator / Balasmic</li>
                 <li>User Discovery</li>
               </ul>
             </div>
@@ -108,19 +108,16 @@
             <div class="content">
               <h2 class="title is-3">Relevant Tools</h2>
               <ul>
-                <li>Git, Gitlab, Codehub, TFS</li>
-                <li>Firebase</li>
+                <li>Git / Gitlab / Codehub / TFS</li>
                 <li>Utilizing REST APIs</li>
-                <li>Package managing with Npm</li>
-                <li>Lodash, Moment, Ng-Bootstrap, Shopify, Gulp, Grunt</li>
-                <li>Google Tag Manager & Analytics</li>
+                <li>Node / NPM/ / Firebase</li>
+                <li>Google Tag Manager / Analytics</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="columns push-around">
       <div class="column is-4">
         <div class="card has-text-centered">
@@ -143,7 +140,7 @@
           <div class="card-content">
             <div class="content">
               <h2 class="title is-2">My Spotify</h2>
-              <p>Web application using Spotify's API. Features can be found on the GitHub repository.</p>
+              <p>Web application using Spotify's API.</p>
               <button class="button is-link">Learn more</button>
             </div>
           </div>
@@ -157,7 +154,7 @@
           <div class="card-content">
             <div class="content">
               <h2 class="title is-2 has-text-centered">Dillard's</h2>
-              <p>Create initial wireframes, provide updated high fidelity mock ups as the project progresses , and build out applications using HTML, SCSS, and JavaScript.</p>
+              <p>Create initial wireframes, provide mock-ips, and build out applications using HTML, SCSS, and JavaScript.</p>
               <p>Mock ups i've worked on can be found under the forked section of my <a
                 href="https://codepen.io/cmuzzin/pens/forked/?sort_col=item_updated_at">CodeHub
                 profile.</a></p>
@@ -166,86 +163,77 @@
         </div>
       </div>
     </div>
-
-    <div class="intro column is-8 is-offset-2 push-around">
-      <h2 class="title">Perfect for developers or designers!</h2><br>
-      <p class="subtitle">Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a.
-        Neque
-        egestas congue quisque egestas diam in arcu cursus.</p>
-    </div>
   </section>
 
-  <section class="section" id="contact">
-    <div class="container">
-      <h1 class="is-size-1 has-text-centered">Contact</h1>
-      <div class="columns">
-        <div class="column">
-          <form [formGroup]="form" (ngSubmit)="onSubmit()">
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">From</label>
-              </div>
-              <div class="field-body">
-                <div class="field is-grouped">
-                  <p class="control is-expanded has-icons-left">
-                    <input class="input" type="text" placeholder="Name" name="name" id="name" formControlName="name">
-                    <span class="icon is-small is-left">
+  <section class="container" id="contact">
+    <h1 class="is-size-1 has-text-centered">Contact</h1>
+    <div class="columns">
+      <div class="column">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">From</label>
+            </div>
+            <div class="field-body">
+              <div class="field is-grouped">
+                <p class="control is-expanded has-icons-left">
+                  <input class="input" type="text" placeholder="Name" name="name" id="name" formControlName="name">
+                  <span class="icon is-small is-left">
           <i class="fa fa-user"></i>
         </span>
-                  </p>
-                </div>
-                <div class="field">
-                  <p class="control is-expanded has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Email" name="email" id="email" formControlName="email">
-                    <span class="icon is-small is-left">
+                </p>
+              </div>
+              <div class="field">
+                <p class="control is-expanded has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Email" name="email" id="email" formControlName="email">
+                  <span class="icon is-small is-left">
           <i class="fa fa-envelope"></i>
         </span>
-                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Subject</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" placeholder="Subject" name="subject" id="subject" formControlName="subject">
                 </div>
               </div>
             </div>
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Subject</label>
-              </div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <input class="input" type="text" placeholder="Subject" name="subject" id="subject" formControlName="subject">
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
 
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Question</label>
-              </div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Question</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
                             <textarea class="textarea" placeholder="Leave a me a message" name="message" id="message" formControlName="message">
 
                             </textarea>
-                  </div>
                 </div>
               </div>
             </div>
-            <div class="field is-horizontal">
-              <div class="field-label">
-              </div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <button type="submit" class="button is-info is-pulled-right" [disabled]="form.invalid">
-                      Send message
-                    </button>
-                  </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label">
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <button type="submit" class="button is-info is-pulled-right" [disabled]="form.invalid">
+                    Send message
+                  </button>
                 </div>
               </div>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </section>
