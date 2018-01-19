@@ -45,16 +45,16 @@
 
   <div class="box cta">
     <p class="has-text-centered">
-      Skip to the point? <a class="button is-info is-outlined push-right">Resume Here</a>
+      Skip to the point? <button class="button is-info is-outlined push-right">Resume Here</button>
     </p>
   </div>
 
   <section id="skills" class="container">
     <h2 class="title has-text-centered">Skills & Experience</h2>
-    <div class="columns push-around"  >
+    <div class="columns push-around">
       <div class="column is-4">
-        <div class="card">
-          <div class="card-image has-text-centered">
+        <div class="card has-text-centered">
+          <div class="card-image">
             <i class="fa fa-code"></i>
           </div>
           <div class="card-content">
@@ -83,8 +83,8 @@
         </div>
       </div>
       <div class="column is-4">
-        <div class="card">
-          <div class="card-image has-text-centered">
+        <div class="card has-text-centered">
+          <div class="card-image">
             <i class="fa fa-paint-brush"></i>
           </div>
           <div class="card-content">
@@ -100,8 +100,8 @@
         </div>
       </div>
       <div class="column is-4">
-        <div class="card">
-          <div class="card-image has-text-centered">
+        <div class="card has-text-centered">
+          <div class="card-image">
             <i class="fa fa-wrench"></i>
           </div>
           <div class="card-content">
@@ -128,6 +128,7 @@
             <div class="content">
               <h4>Online Portfolio</h4>
               <p>Code and maintain this website.</p>
+              <p><a href="https://github.com/cmuzzin/Portfolio">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -167,7 +168,7 @@
 
   <section class="container" id="contact">
     <h2 class="title has-text-centered">Contact</h2>
-    <div class="columns">
+    <div class="columns push-around">
       <div class="column">
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
           <div class="field is-horizontal">
@@ -238,20 +239,18 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
       <div class="content has-text-centered">
         <p>
           &copy; Chris Muzzin 2017
-        </p>
-        <p>
           <a class="icon" href="">
-            <i class="fa fa-linkedin fa-2x"></i>
+            <i class="fa fa-linkedin"></i>
           </a>
           <a class="icon" href="">
-            <i class="fa fa-github fa-2x"></i>
+            <i class="fa fa-github"></i>
           </a>
           <a class="icon" href="">
-            <i class="fa fa-codepen fa-2x"></i>
+            <i class="fa fa-codepen"></i>
           </a>
         </p>
       </div>
