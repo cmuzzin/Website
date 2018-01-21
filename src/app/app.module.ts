@@ -7,7 +7,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import {ReactiveFormsModule} from "@angular/forms";
-
+import {ScrollToModule} from 'ng2-scroll-to';
 
 @NgModule({
   declarations: [
@@ -18,6 +18,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     AppRoutingModule,
     ReactiveFormsModule,
     AngularFireDatabaseModule,
+    ScrollToModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],

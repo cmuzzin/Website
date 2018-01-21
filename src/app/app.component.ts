@@ -36,4 +36,8 @@ export class AppComponent {
     this.db.list('/messages').push(formRequest);
     this.form.reset();
   };
+
+  scroll(el) {
+    el.scrollIntoView();
+  }
 }
