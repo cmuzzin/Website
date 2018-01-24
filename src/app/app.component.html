@@ -1,5 +1,5 @@
 <div class="container-fluid ">
-  <section class="hero is-medium is-info is-small">
+  <section class="hero is-medium is-info">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -47,12 +47,13 @@
 
   <div class="box cta">
     <p class="has-text-centered">
-      Skip to the point? <button class="button is-info is-outlined push-right">Resume Here</button>
+      Skip to the point?
+      <button class="button is-info is-outlined push-right">Resume Here</button>
     </p>
   </div>
 
   <section class="container">
-    <h2 class="title has-text-centered">Skills & Experience</h2>
+    <h2 class="title has-text-centered">Some things I know</h2>
     <div class="columns push-around" id="skills">
       <div class="column is-4">
         <div class="card has-text-centered">
@@ -178,21 +179,25 @@
               <label class="label">From</label>
             </div>
             <div class="field-body">
-              <div class="field is-grouped">
+              <div class="field">
                 <p class="control is-expanded has-icons-left">
-                  <input class="input" type="text" placeholder="Name" name="name" id="name" formControlName="name">
+                  <input class="input" type="text" placeholder="Name" name="name" id="name" formControlName="name"
+                         [ngClass]="{'is-danger': formErrors.name}">
                   <span class="icon is-small is-left">
           <i class="fa fa-user"></i>
         </span>
                 </p>
+                <p class="help is-danger is-small">{{formErrors.name}}</p>
               </div>
               <div class="field">
                 <p class="control is-expanded has-icons-left has-icons-right">
-                  <input class="input" type="email" placeholder="Email" name="email" id="email" formControlName="email">
+                  <input class="input" type="email" placeholder="Email" name="email" id="email" formControlName="email"
+                         [ngClass]="{'is-danger': formErrors.email}">
                   <span class="icon is-small is-left">
           <i class="fa fa-envelope"></i>
         </span>
                 </p>
+                <p class="help is-danger is-small">{{formErrors.email}}</p>
               </div>
             </div>
           </div>
@@ -203,8 +208,10 @@
             <div class="field-body">
               <div class="field">
                 <div class="control">
-                  <input class="input" type="text" placeholder="Subject" name="subject" id="subject" formControlName="subject">
+                  <input class="input" type="text" placeholder="Subject" name="subject" id="subject" formControlName="subject"
+                         [ngClass]="{'is-danger': formErrors.subject}">
                 </div>
+                <p class="help is-danger is-small">{{formErrors.subject}}</p>
               </div>
             </div>
           </div>
@@ -216,10 +223,17 @@
             <div class="field-body">
               <div class="field">
                 <div class="control">
-                            <textarea class="textarea" placeholder="Leave a me a message" name="message" id="message" formControlName="message">
+                            <textarea class="textarea"
+                                      placeholder="Leave a me a message"
+                                      name="message"
+                                      id="message"
+                                      formControlName="message"
+                                      maxlength="251"
+                                      [ngClass]="{'is-danger': formErrors.message}">
 
                             </textarea>
                 </div>
+                <p class="help is-danger is-small">{{formErrors.message}}</p>
               </div>
             </div>
           </div>
