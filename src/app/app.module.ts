@@ -8,6 +8,9 @@ import { AngularFireDatabaseModule} from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import {ReactiveFormsModule} from "@angular/forms";
 import {ScrollToModule} from 'ng2-scroll-to';
+import {SharedModule} from "./shared/shared.module";
+import {ToastrModule} from "ngx-toastr";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import {ScrollToModule} from 'ng2-scroll-to';
     AppRoutingModule,
     ReactiveFormsModule,
     AngularFireDatabaseModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
+    SharedModule.forRoot(),
     ScrollToModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase)
   ],
