@@ -1,1 +1,8 @@
-{}
+{
+  "hosting": {
+    "public": "dist"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}
