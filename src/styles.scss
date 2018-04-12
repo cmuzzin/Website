@@ -8,11 +8,102 @@
   margin-left: 8px;
 }
 
-push-down {
+.push-down {
   margin-top: 8px;
+}
+
+.push-left {
+  margin-right: 8px;
 }
 
 body{
   background: #EFF3F4;
   font-family: 'Open Sans', sans-serif;
+}
+
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(https://fonts.googleapis.com/css?family=Open+Sans) format("truetype");
+}
+
+.content ul {
+  list-style: disc outside;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+ul {
+  list-style-type: none !important;
+}
+
+.hero-body .container {
+  max-width: 700px;
+}
+.hero-body .title {
+  color: hsl(192,17%,99%) !important;
+}
+.hero-body .subtitle {
+  color: hsl(192,17%,99%) !important;
+  padding-top: 2rem;
+  line-height: 1.5;
+}
+.features {
+  padding: 5rem 0;
+}
+.box.cta {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+.card-image > .fa {
+  font-size: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #363636;
+}
+.card-content .content {
+  font-size: 15px;
+  margin: 1rem 1rem;
+  p, ul li{
+    font-size: 1.15rem;
+    font-weight: 400;
+  }
+}
+.card-content .content h4 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.card {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.intro {
+  padding: 5rem 0;
+  text-align: center;
+}
+.sandbox {
+  padding: 5rem 0;
+}
+.tile.notification {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#contact {
+  margin-top: 20px;
+}
+
+.is-spotify {
+  background-color: transparent;
+  border-color: #23d160 !important;
+  color: #23d160 !important;
+  &:hover, &:focus{
+    background-color: #23d160;
+    color: #fff !important;
+  }
 }
