@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import * as firebase from "firebase";
 
 @Component({
   selector: 'app-portfolio',
@@ -7,14 +6,16 @@ import * as firebase from "firebase";
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  image: string;
-
+  toggleModal: boolean;
   constructor() {
-    const storageRef = firebase.storage().ref().child('itemWeb/itemWeb_createCollection.PNG');
-    storageRef.getDownloadURL().then(url => this.image = url);
+    this.toggleModal = false;
   }
-
   ngOnInit() {
   }
+
+  modalFlag() {
+    console.log(this.toggleModal);
+    this.toggleModal = true;
+  };
 
 }

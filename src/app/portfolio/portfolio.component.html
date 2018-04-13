@@ -13,7 +13,7 @@
             <i class="fa fa-tag"></i>
           </div>
           <footer class="card-footer">
-            <a class="card-footer-item">View</a>
+            <a class="card-footer-item" (click)="modalFlag()">View</a>
           </footer>
         </div>
       </div>
@@ -62,7 +62,11 @@
           </footer>
         </div>
       </div>
-      <div class="column">
+    </div>
+  </div>
+  <div class="row">
+    <div class="columns">
+      <div class="column is-4">
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
@@ -80,3 +84,5 @@
     </div>
   </div>
 </section>
+
+<app-images-carousel [showModal]="toggleModal"></app-images-carousel>

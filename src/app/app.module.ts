@@ -14,6 +14,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import {NavComponent} from "./nav/nav.component";
+import {ImagesCarouselComponent} from "./portfolio/images-carousel/images-carousel.component";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {NavComponent} from "./nav/nav.component";
     PortfolioComponent,
     HeroComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    ImagesCarouselComponent
   ],
   imports: [
     BrowserModule,
