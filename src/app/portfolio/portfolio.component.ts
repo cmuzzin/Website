@@ -18,8 +18,8 @@ export class PortfolioComponent implements OnInit {
     this.collection = this.imageService.getItemImages();
   }
 
-  modalFlag(images) {
-    this.selection = images;
+  modalFlag(collection) {
+    this.selection = collection;
     this.toggleModal = true;
   };
 

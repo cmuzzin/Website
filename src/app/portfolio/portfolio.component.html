@@ -12,7 +12,7 @@
           <div class="card-image has-text-centered">
             <i class="fa {{collection.icon}}"></i>
           </div>
-          <footer class="card-footer clickable" (click)="modalFlag(collection.images)">
+          <footer class="card-footer clickable" (click)="modalFlag(collection)">
             <a class="card-footer-item">View</a>
           </footer>
         </div>
@@ -40,4 +40,4 @@
   </div>
 </section>
 
-<app-images-carousel [showModal]="toggleModal" (closeModal)="closeModal($event)" [images]="selection"></app-images-carousel>
+<app-images-carousel [showModal]="toggleModal" (closeModal)="closeModal($event)" [collection]="selection"></app-images-carousel>

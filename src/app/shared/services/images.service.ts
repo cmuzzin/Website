@@ -27,6 +27,10 @@ export class ImagesService {
           {
             src: '../../../assets/ItemWeb/itemWeb_existingProduct.PNG',
             title: 'Product'
+          },
+          {
+            src: '../../../assets/ItemWeb/itemWeb_existingBundle.PNG',
+            title: 'Product'
           }
         ],
         icon:'fa-building'

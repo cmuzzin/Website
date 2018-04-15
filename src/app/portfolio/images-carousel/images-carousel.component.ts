@@ -8,7 +8,7 @@ import {NgxCarousel} from "ngx-carousel";
 })
 export class ImagesCarouselComponent implements OnInit {
   @Input() showModal: boolean;
-  @Input() images: Array<any> = [];
+  @Input() collection: any;
   @Output() closeModal: EventEmitter<boolean> = new EventEmitter();
   carouselConfig: NgxCarousel;
 
