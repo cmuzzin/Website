@@ -2,62 +2,17 @@
   <h1 class="title has-text-centered" style="margin-top: 20px">Portfolio</h1>
   <div class="row">
     <div class="columns">
-      <div class="column">
+      <div class="column" *ngFor="let collection of collection">
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
-              Item Web
+              {{collection.collection}}
             </p>
           </header>
           <div class="card-image has-text-centered">
-            <i class="fa fa-tag"></i>
+            <i class="fa {{collection.icon}}"></i>
           </div>
-          <footer class="card-footer">
-            <a class="card-footer-item" (click)="modalFlag()">View</a>
-          </footer>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              MCM
-            </p>
-          </header>
-          <div class="card-image has-text-centered">
-            <i class="fa fa-calendar"></i>
-          </div>
-          <footer class="card-footer">
-            <a class="card-footer-item">View</a>
-          </footer>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              SPC
-            </p>
-          </header>
-          <div class="card-image has-text-centered">
-            <i class="fa fa-building"></i>
-          </div>
-          <footer class="card-footer">
-            <a class="card-footer-item">View</a>
-          </footer>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              MOPS
-            </p>
-          </header>
-          <div class="card-image has-text-centered">
-            <i class="fa fa-dollar"></i>
-          </div>
-          <footer class="card-footer">
+          <footer class="card-footer clickable" (click)="modalFlag(collection.images)">
             <a class="card-footer-item">View</a>
           </footer>
         </div>
@@ -85,4 +40,4 @@
   </div>
 </section>
 
-<app-images-carousel [showModal]="toggleModal"></app-images-carousel>
+<app-images-carousel [showModal]="toggleModal" (closeModal)="closeModal($event)" [images]="selection"></app-images-carousel>

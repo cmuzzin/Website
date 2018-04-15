@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {NgxCarousel} from "ngx-carousel";
 
 @Component({
   selector: 'app-images-carousel',
@@ -7,17 +8,31 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ImagesCarouselComponent implements OnInit {
   @Input() showModal: boolean;
-  @Input() collection: Array<any> = [];
+  @Input() images: Array<any> = [];
+  @Output() closeModal: EventEmitter<boolean> = new EventEmitter();
+  carouselConfig: NgxCarousel;
+
 
   constructor() {
-    console.log(this.showModal);
+
   }
 
   ngOnInit() {
+    this.carouselConfig = {
+      grid: {xs: 1, sm: 1, md: 3, lg: 3, all: 0},
+      slide: 1,
+      speed: 400,
+      interval: 10000,
+      point: {
+        visible: true
+      },
+      loop: true,
+      touch: true
+    }
   }
 
-  closeModal() {
-    this.showModal = false;
-  }
+  close() {
+    this.closeModal.emit(false);
+  };
 
 }

@@ -15,6 +15,7 @@ import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import {NavComponent} from "./nav/nav.component";
 import {ImagesCarouselComponent} from "./portfolio/images-carousel/images-carousel.component";
+import {NgxCarouselModule} from "ngx-carousel";
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {ImagesCarouselComponent} from "./portfolio/images-carousel/images-carous
     AppRoutingModule,
     ReactiveFormsModule,
     AngularFireDatabaseModule,
+    NgxCarouselModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
     SharedModule.forRoot(),

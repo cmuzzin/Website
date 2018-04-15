@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ImagesService} from "../shared/services/images.service";
 
 @Component({
   selector: 'app-portfolio',
@@ -7,15 +8,24 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
   toggleModal: boolean;
-  constructor() {
+  collection: Array<any> = [];
+  selection: any;
+
+  constructor(private imageService: ImagesService) {
     this.toggleModal = false;
   }
   ngOnInit() {
+    this.collection = this.imageService.getItemImages();
   }
 
-  modalFlag() {
-    console.log(this.toggleModal);
+  modalFlag(images) {
+    this.selection = images;
     this.toggleModal = true;
   };
+
+  closeModal(ev) {
+    this.toggleModal = ev;
+  }
+
 
 }
