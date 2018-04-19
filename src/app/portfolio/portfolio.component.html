@@ -1,43 +1,18 @@
-<section class="">
-  <h1 class="title has-text-centered" style="margin-top: 20px">Portfolio</h1>
+<section class="container-fluid" style="margin-top: 20px">
   <div class="row">
-    <div class="columns">
-      <div class="column" *ngFor="let collection of collection">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              {{collection.collection}}
-            </p>
-          </header>
-          <div class="card-image has-text-centered">
-            <i class="fa {{collection.icon}}"></i>
-          </div>
-          <footer class="card-footer clickable" (click)="modalFlag(collection)">
-            <a class="card-footer-item">View</a>
-          </footer>
-        </div>
+    <div class="card" *ngFor="let collection of collection">
+      <div class="card-header">
+        <p class="card-header-title is--size-2">{{collection.collection}}</p>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="columns">
-      <div class="column is-4">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              My Spotify
-            </p>
-          </header>
-          <div class="card-image has-text-centered">
-            <i class="fa fa-spotify"></i>
-          </div>
-          <footer class="card-footer">
-            <a class="card-footer-item">View</a>
-          </footer>
+      <div class="card-content">
+        <div *ngFor="let img of collection.images">
+          <p class="subtitle">{{img.title}}</p>
+          <figure class="image is-2by1">
+            <img src="{{img.src}}">
+          </figure>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<app-images-carousel [showModal]="toggleModal" (closeModal)="closeModal($event)" [collection]="selection"></app-images-carousel>
