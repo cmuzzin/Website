@@ -46,7 +46,7 @@ export class ImagesService {
           },
           {
             src: '../../assets/MCM/mcm_dayview.PNG',
-            title: 'Calendar'
+            title: 'Day View'
           },
           {
             src: '../../assets/MCM/mcm_editGroupModal.PNG',
@@ -54,15 +54,15 @@ export class ImagesService {
           },
           {
             src: '../../assets/MCM/mcm_noteModal.PNG',
-            title: 'Calendar'
+            title: 'Notes'
           },
           {
             src: '../../assets/MCM/mcm_search.PNG',
-            title: 'Calendar'
+            title: 'Search'
           },
           {
             src: '../../assets/MCM/mcm_admin.PNG',
-            title: 'Calendar'
+            title: 'Admin'
           }
         ],
         icon:'fa-calendar'
