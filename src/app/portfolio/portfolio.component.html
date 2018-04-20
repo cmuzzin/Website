@@ -1,9 +1,9 @@
 <section class="container-fluid" style="margin-top: 20px">
   <div class="row">
     <div class="card" *ngFor="let collection of collection">
-      <div class="card-header">
+      <div class="card-header" (click)="collection.toggle = !collection.toggle">
         <p class="card-header-title is--size-2">{{collection.collection}}</p>
-        <a class="card-header-icon" aria-label="more options" (click)="collection.toggle = !collection.toggle">
+        <a class="card-header-icon" aria-label="more options" >
       <span class="icon">
         <i class="fa" [ngClass]="collection.toggle ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
       </span>
