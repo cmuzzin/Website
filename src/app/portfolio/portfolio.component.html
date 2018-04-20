@@ -3,8 +3,13 @@
     <div class="card" *ngFor="let collection of collection">
       <div class="card-header">
         <p class="card-header-title is--size-2">{{collection.collection}}</p>
+        <a class="card-header-icon" aria-label="more options" (click)="collection.toggle = !collection.toggle">
+      <span class="icon">
+        <i class="fa" [ngClass]="collection.toggle ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+      </span>
+        </a>
       </div>
-      <div class="card-content">
+      <div class="card-content" *ngIf="collection.toggle">
         <div *ngFor="let img of collection.images">
           <p class="subtitle">{{img.title}}</p>
           <figure class="image is-2by1">

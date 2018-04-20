@@ -31,7 +31,8 @@ export class ImagesService {
             title: 'Collection'
           }
         ],
-        icon:'fa-tag'
+        icon:'fa-tag',
+        toggle: true
       },
       {
         collection: 'MCM',
@@ -65,7 +66,8 @@ export class ImagesService {
             title: 'Admin'
           }
         ],
-        icon:'fa-calendar'
+        icon:'fa-calendar',
+        toggle: true
       },
     ]
   }
