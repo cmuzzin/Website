@@ -8,6 +8,44 @@ export class ImagesService {
   getItemImages() {
     return [
       {
+        collection: "My Spotify",
+        images: [
+          {
+            src: '../../assets/mySpotifyImages/login.png',
+            title: 'Login'
+          },
+          {
+            src: '../../assets/mySpotifyImages/playlists.png',
+            title: 'Playlist'
+          },
+          {
+            src: '../../assets/mySpotifyImages/albums.png',
+            title: 'Albums'
+          },
+          {
+            src: '../../assets/mySpotifyImages/results.png',
+            title: 'Results'
+          },
+          {
+            src: '../../assets/mySpotifyImages/more_results.png',
+            title: 'Results cont.'
+          },
+          {
+            src: '../../assets/mySpotifyImages/playlist.png',
+            title: 'Playlist'
+          },
+          {
+            src: '../../assets/mySpotifyImages/artist.png',
+            title: 'Artist'
+          },
+          {
+            src: '../../assets/mySpotifyImages/add_to_playlists.png',
+            title: 'Add To Playlist'
+          },
+        ],
+        toggle: true
+      },
+      {
         collection: 'Item Web',
         images: [
           {
