@@ -1,21 +1,23 @@
 {
   "hosting": {
-    "public": "dist"
+    "public": "dist",
+    "rewrites": [
+      {
+        "source": "/public/**",
+        "destination": "/public.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   },
   "storage": {
     "rules": "storage.rules"
-  },
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ],
-  "rewrites": [{
-    "source": "/public/**",
-    "destination": "/public.html"
-  },
-    {
-      "source": "**",
-      "destination": "/index.html"
-    }]
+  }
 }
