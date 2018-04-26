@@ -19,7 +19,7 @@ const routes: Routes = [
     path:'home'
   },
   {
-    component: AppComponent,
+    component: HomeComponent,
     path:'**'
   }
 ];
