@@ -1,4 +1,4 @@
-<section class="container-fluid" style="margin-top: 20px">
+<section class="container" style="margin-top: 20px">
   <div class="row">
     <div class="card" *ngFor="let collection of collection">
       <div class="card-header clickable" (click)="collection.toggle = !collection.toggle">
@@ -17,10 +17,10 @@
           </div>
         </article>
         <div *ngFor="let img of collection.images">
+          <hr>
           <figure class="image is-2by1">
             <img src="{{img.src}}">
           </figure>
-          <br>
         </div>
       </div>
     </div>
