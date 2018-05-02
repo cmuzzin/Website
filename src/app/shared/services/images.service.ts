@@ -43,7 +43,9 @@ export class ImagesService {
             title: 'Add To Playlist'
           },
         ],
-        toggle: true
+        description: 'Dummy text until I write out the description.',
+        toggle: true,
+        wip: false
       },
       {
         collection: 'Item Web',
@@ -58,22 +60,24 @@ export class ImagesService {
           },
           {
             src: '../../assets/ItemWeb/itemWeb_createCollection.PNG',
-            title: 'New collection'
-          },
-          {
-            src: '../../assets/ItemWeb/itemWeb_existingCollection.PNG',
             title: 'Collection Search'
           },
           {
-            src: '../../assets/ItemWeb/itemWeb_modalExample.PNG',
+            src: '../../assets/ItemWeb/itemWeb_existingCollection.PNG',
             title: 'Collection'
+          },
+          {
+            src: '../../assets/ItemWeb/itemWeb_modalExample.PNG',
+            title: 'Modal'
           }
         ],
+        description: 'Dummy text until I write out the description.',
         icon:'fa-tag',
-        toggle: true
+        toggle: true,
+        wip: false
       },
       {
-        collection: 'MCM',
+        collection: 'MCM - Marketing Campaign Manager',
         images: [
           {
             src: '../../assets/MCM/mcm_login.PNG',
@@ -104,9 +108,67 @@ export class ImagesService {
             title: 'Admin'
           }
         ],
+        description: 'Dummy text until I write out the description.',
         icon:'fa-calendar',
-        toggle: true
+        toggle: true,
+        wip: false
       },
+      {
+        collection: 'Store Planning & Construction',
+        description: 'Dummy text until I write out the description.',
+        images: [
+          {
+            src: '../../assets/SPC_Images/spc_login.png',
+            title: 'Login'
+          },
+          {
+            src: '../../assets/SPC_Images/spc_home.png',
+            title: 'Home'
+          },
+          {
+            src: '../../assets/SPC_Images/spc_search.png',
+            title: 'Search'
+          },
+          {
+            src: '../../assets/SPC_Images/spc_store.png',
+            title: 'Store'
+          },
+          {
+            src: '../../assets/SPC_Images/spc_building.png',
+            title: 'Building'
+          }
+        ],
+        toggle: true,
+        wip: true
+      },
+      {
+        collection: 'New Email Work Flow',
+        description: 'Dummy text until I write out the description.',
+        images: [
+          {
+            src: '../../assets/Email_Flow_Images/rememberMe.png',
+            title: 'Step 1'
+          },
+          {
+            src: '../../assets/Email_Flow_Images/prepCalc.png',
+            title: 'Step 2'
+          },
+          {
+            src: '../../assets/Email_Flow_Images/createALook.png',
+            title: 'Step 3'
+          },
+          {
+            src: '../../assets/Email_Flow_Images/supportingDocs.png',
+            title: 'Step 4',
+          },
+          {
+            src: '../../assets/Email_Flow_Images/storeoverride.png',
+            title: 'Step 5'
+          }
+        ],
+        toggle: true,
+        wip: true
+      }
     ]
   }
 

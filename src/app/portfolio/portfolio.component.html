@@ -1,8 +1,9 @@
 <section class="container-fluid" style="margin-top: 20px">
   <div class="row">
     <div class="card" *ngFor="let collection of collection">
-      <div class="card-header" (click)="collection.toggle = !collection.toggle">
-        <p class="card-header-title is--size-2">{{collection.collection}}</p>
+      <div class="card-header clickable" (click)="collection.toggle = !collection.toggle">
+        <p class="card-header-title is--size-2">{{collection.collection}}
+          <span *ngIf="collection.wip" class="tag is-info is-small push-right">Work in Progress</span></p>
         <a class="card-header-icon" aria-label="more options" >
       <span class="icon">
         <i class="fa" [ngClass]="collection.toggle ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
@@ -10,11 +11,16 @@
         </a>
       </div>
       <div class="card-content" *ngIf="collection.toggle">
+        <article class="message is-dark">
+          <div class="message-body">
+            {{collection.description}}
+          </div>
+        </article>
         <div *ngFor="let img of collection.images">
-          <p class="subtitle">{{img.title}}</p>
           <figure class="image is-2by1">
             <img src="{{img.src}}">
           </figure>
+          <br>
         </div>
       </div>
     </div>
