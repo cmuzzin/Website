@@ -15,6 +15,10 @@
   margin-right: 8px;
 }
 
+.push-around {
+  margin: 10px;
+}
+
 body{
   background: #EFF3F4;
   font-family: 'Open Sans', sans-serif;
@@ -74,9 +78,10 @@ ul {
   font-weight: 700;
 }
 .card {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
   margin-bottom: 2rem;
 }
+
 .intro {
   padding: 5rem 0;
   text-align: center;
