@@ -43,7 +43,7 @@ export class ImagesService {
             title: 'Add To Playlist'
           },
         ],
-        description: 'Dummy text until I write out the description.',
+        description: 'A application that utilizes the API endpoints found in Spotify.',
         toggle: true,
         wip: false
       },
@@ -71,7 +71,7 @@ export class ImagesService {
             title: 'Modal'
           }
         ],
-        description: 'Dummy text until I write out the description.',
+        description: 'Re designed the UI for creating a composite (grouping of items), collection (grouping of composites), and bundle (grouping of products).',
         icon:'fa-tag',
         toggle: true,
         wip: false
@@ -108,14 +108,14 @@ export class ImagesService {
             title: 'Admin'
           }
         ],
-        description: 'Dummy text until I write out the description.',
+        description: 'Built a scheduling calendar for the marking team to determine when to send emails. Users can drag and drop a email request to the date they wish to send it.',
         icon:'fa-calendar',
         toggle: true,
         wip: false
       },
       {
         collection: 'Store Planning & Construction',
-        description: 'Dummy text until I write out the description.',
+        description: 'Fresh application for the current process of planning and setting up a store.',
         images: [
           {
             src: '../../assets/SPC_Images/spc_login.png',
@@ -143,7 +143,7 @@ export class ImagesService {
       },
       {
         collection: 'New Email Work Flow',
-        description: 'Dummy text until I write out the description.',
+        description: 'Redoing the email for work flow for the marketing team. Custom build a wizard with Ui routing as the driver.',
         images: [
           {
             src: '../../assets/Email_Flow_Images/rememberMe.png',
