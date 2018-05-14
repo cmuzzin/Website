@@ -21,7 +21,8 @@ export class CustomValidatorsService {
       'required': 'Name is required.'
     },
     'email': {
-      'required': 'Email is required.'
+      'required': 'Email is required.',
+      'email': 'Invalid email.'
     },
     'subject': {
       'required': 'Subject is required.'
@@ -34,7 +35,7 @@ export class CustomValidatorsService {
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
       name: ['', Validators.required],
-      email: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
       subject: ['', Validators.required],
       message: ['', [Validators.required, Validators.maxLength(250)]]
     });
