@@ -1,17 +1,29 @@
 .hero-image {
-  background-image: url("../../assets/header-image.jpg");
+  background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+    url("../../assets/header-image.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #999;
-}
 
-.navbar-menu {
-  background: none !important;
-  .navbar-item {
-    &:hover {
-      opacity: .7;
+  .hero-head{
+    .navbar-menu {
+      background: none !important;
+      box-shadow: none !important;
+      .navbar-item {
+        &:hover {
+          opacity: .9;
+        }
+        .resume-link{
+          font-size: 2em;
+        }
+      }
     }
   }
 }
+
+
