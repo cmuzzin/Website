@@ -1,0 +1,17 @@
+.hero-image {
+  background-image: url("../../assets/header-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+}
+
+.navbar-menu {
+  background: none !important;
+  .navbar-item {
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
