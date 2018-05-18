@@ -15,3 +15,17 @@
     }
   }
 }
+
+.is-sticky{
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 30;
+}
+
+@media screen and (min-width: 1088px) {
+  .navbar.is-spaced {
+    padding: 1rem 2rem;
+  }
+}
+
