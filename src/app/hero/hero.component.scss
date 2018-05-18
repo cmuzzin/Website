@@ -1,5 +1,6 @@
 .hero-bg {
-  max-height: 1000px;
+  height: auto;
+  width: auto;
   background-image:
     linear-gradient(
         rgba(0, 0, 0, 0.5),
@@ -35,3 +36,9 @@
   background: #394053;
 }
 
+@media (max-width: 768px){
+  .mobile {
+    background-color: #394053;
+    background-image: none;
+  }
+}
