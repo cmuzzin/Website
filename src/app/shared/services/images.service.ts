@@ -45,7 +45,7 @@ export class ImagesService {
         ],
         description: 'A application that utilizes the API endpoints found in Spotify.',
         toggle: true,
-        wip: false
+        wip: true
       },
       {
         collection: 'Item Web',
