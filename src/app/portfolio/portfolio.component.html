@@ -1,7 +1,7 @@
 <section class="container" style="margin-top: 20px">
   <div class="row">
     <div class="card" *ngFor="let collection of collection">
-      <div class="card-header clickable" (click)="collection.toggle = !collection.toggle">
+      <div class="card-header clickable" (click)="toggleCollection(collection)">
         <p class="card-header-title is--size-2">{{collection.collection}}
           <span *ngIf="collection.wip" class="tag is-info is-small push-right">In Development</span></p>
         <a class="card-header-icon" aria-label="more options" >
@@ -10,7 +10,7 @@
       </span>
         </a>
       </div>
-      <div class="card-content" *ngIf="collection.toggle">
+      <div class="card-content" [@collapse]="collection.toggle ? 'open' : 'closed'">
         <article class="message is-dark">
           <div class="message-body">
             {{collection.description}}

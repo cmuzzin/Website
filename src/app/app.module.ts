@@ -11,17 +11,13 @@ import {SharedModule} from "./shared/shared.module";
 import {ToastrModule} from "ngx-toastr";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
-import {NavComponent} from "./nav/nav.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
-    HeroComponent,
     HomeComponent,
-    NavComponent,
   ],
   imports: [
     BrowserModule,
