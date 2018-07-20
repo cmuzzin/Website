@@ -12,12 +12,14 @@ import {ToastrModule} from "ngx-toastr";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
+import {AboutMeComponent} from "./about-me/about-me.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
     HomeComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
