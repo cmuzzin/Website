@@ -44,7 +44,7 @@ export class ImagesService {
           },
         ],
         description: 'A application that utilizes the API endpoints found in Spotify.',
-        toggle: true,
+        toggle: false,
         wip: true
       },
       {
@@ -73,7 +73,7 @@ export class ImagesService {
         ],
         description: 'Re designed the UI for creating a composite (grouping of items), collection (grouping of composites), and bundle (grouping of products).',
         icon:'fa-tag',
-        toggle: true,
+        toggle: false,
         wip: false
       },
       {
@@ -110,7 +110,7 @@ export class ImagesService {
         ],
         description: 'Built a scheduling calendar for the marking team to determine when to send emails. Users can drag and drop a email request to the date they wish to send it.',
         icon:'fa-calendar',
-        toggle: true,
+        toggle:  false,
         wip: false
       },
       {
@@ -138,7 +138,7 @@ export class ImagesService {
             title: 'Building'
           }
         ],
-        toggle: true,
+        toggle: false,
         wip: true
       },
       {
@@ -166,7 +166,7 @@ export class ImagesService {
             title: 'Step 5'
           }
         ],
-        toggle: true,
+        toggle: false,
         wip: true
       }
     ]
