@@ -28,8 +28,6 @@ export class HeroComponent implements OnInit, AfterViewInit {
         element.addEventListener('click', () => {
           let targetTemp = element.dataset.target;
           let target = document.getElementById(targetTemp);
-
-          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
           element.classList.toggle('is-active');
           target.classList.toggle('is-active');
         });
