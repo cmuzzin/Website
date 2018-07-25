@@ -1,11 +1,10 @@
 .hero-bg {
   height: auto;
   width: auto;
-  background-image:
-    linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)),
-    url("../../../../assets/header-image.jpg");
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+  url("../../../../assets/header-image.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,32 +12,37 @@
   background-color: #999;
 }
 
-.navbar-menu {
-  background: #394053;
-  box-shadow: none;
-  .navbar-item {
-    color: white;
-    &:hover {
-      background-color: #292929;
-      color: whitesmoke;
-    }
-    .link-text{
-      font-size: 1.5em;
+.navbar{
+  background: transparent;
+  .navbar-menu {
+    background: transparent;
+    box-shadow: none;
+    .navbar-item {
+      color: white;
+      &:hover {
+        background-color: #292929;
+        color: whitesmoke;
+      }
+      .link-text {
+        font-size: 1.5em;
+      }
     }
   }
 }
 
-.is-sticky{
+.is-sticky {
   left: 0;
   position: fixed;
   right: 0;
   z-index: 30;
   background: #394053;
   box-shadow: 1px 0 4px #888;
-  height: 70px;
+  .navbar-menu-background-sticky {
+    background: #394053;
+  }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .mobile {
     background-color: #394053;
     background-image: none;
