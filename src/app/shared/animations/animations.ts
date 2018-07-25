@@ -18,8 +18,7 @@ export const collapse =
     transition('open => closed', animate('250ms 100ms'))
   ]);
 
-export const navShowHide =
-  trigger('navShowHide', [
-    state('hidden', style({transform: 'translate3d(0, -100%, 0)'})),
-    transition('*=>*', [animate('150ms ease-in')])
+export const stickyNav =
+  trigger('stickyNav', [
+    transition('*<=>*', [animate('2s ease-in')])
   ]);
