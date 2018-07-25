@@ -1,10 +1,10 @@
 <section class="mt-3">
   <div class="container">
     <div class="row">
-      <div class="card" *ngFor="let collection of collection">
+      <div class="card shadow" *ngFor="let collection of collection">
         <div class="card-header clickable" (click)="toggleCollection(collection)">
           <p class="card-header-title is--size-2">{{collection.collection}}
-            <span *ngIf="collection.wip" class="tag is-info is-small push-right">In Development</span></p>
+            <span *ngIf="collection.wip" class="tag is-info is-small ml-3">In Development</span></p>
           <a class="card-header-icon" aria-label="more options" >
       <span class="icon">
         <i class="fa" [ngClass]="collection.toggle ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
@@ -12,7 +12,7 @@
           </a>
         </div>
         <div class="card-content" [@collapse]="collection.toggle ? 'open' : 'closed'">
-          <article class="message is-dark">
+          <article class="message is-info">
             <div class="message-body">
               {{collection.description}}
             </div>

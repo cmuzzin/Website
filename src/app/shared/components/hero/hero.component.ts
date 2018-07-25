@@ -1,9 +1,11 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import {navShowHide} from "../../animations/animations";
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.scss']
+  styleUrls: ['./hero.component.scss'],
+  animations: [navShowHide]
 })
 export class HeroComponent implements OnInit {
   isSticky: boolean;
