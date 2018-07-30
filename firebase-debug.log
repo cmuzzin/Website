@@ -1,0 +1,235 @@
+[debug] [2018-07-30T15:14:58.013Z] ----------------------------------------------------------------------
+[debug] [2018-07-30T15:14:58.015Z] Command:       /usr/local/bin/node /Users/muzzicm/.npm-global/bin/firebase deploy
+[debug] [2018-07-30T15:14:58.015Z] CLI Version:   3.18.4
+[debug] [2018-07-30T15:14:58.015Z] Platform:      darwin
+[debug] [2018-07-30T15:14:58.015Z] Node Version:  v10.1.0
+[debug] [2018-07-30T15:14:58.016Z] Time:          Mon Jul 30 2018 10:14:58 GMT-0500 (CDT)
+[debug] [2018-07-30T15:14:58.016Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-30T15:14:58.028Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-30T15:14:58.029Z] > authorizing via signed-in user
+[debug] [2018-07-30T15:14:58.030Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-30T15:14:58.030Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/DjcmMQuJ9hC8c-DrSbzXXL95M-jttQ_yMIQVbg0QmHA',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jul 30 2018 10:14:58 GMT-0500 (CDT)
+[debug] [2018-07-30T15:14:58.276Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:14:58.295Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/website-86266  
+  
+ Mon Jul 30 2018 10:14:58 GMT-0500 (CDT)
+[debug] [2018-07-30T15:14:58.807Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:14:58.808Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/website-86266/tokens  
+  
+ Mon Jul 30 2018 10:14:58 GMT-0500 (CDT)
+[debug] [2018-07-30T15:14:59.216Z] <<< HTTP RESPONSE 200
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions.
+ Please upgrade using npm install --save firebase-functions@latest in your functions directory.
+[info] 
+[info] === Deploying to 'website-86266'...
+[info] 
+[info] i  deploying storage, functions, hosting
+[debug] [2018-07-30T15:15:01.800Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/website-86266  
+  
+ Mon Jul 30 2018 10:15:01 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:02.102Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2018-07-30T15:15:02.110Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/website-86266:test  
+ { source: { files: [ [Object] ] } } 
+ Mon Jul 30 2018 10:15:02 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:02.382Z] <<< HTTP RESPONSE 200
+[info] ✔  storage: rules file storage.rules compiled successfully
+[debug] [2018-07-30T15:15:02.384Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.8.1",
+    "firebase-functions": "^0.8.1",
+    "nodemailer": "^4.4.2"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-07-30T15:15:02.385Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/website-86266?view=CONSUMER_VIEW  
+  
+ Mon Jul 30 2018 10:15:02 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:02.385Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/website-86266?view=CONSUMER_VIEW  
+  
+ Mon Jul 30 2018 10:15:02 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:02.927Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:02.964Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2018-07-30T15:15:02.965Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/website-86266  
+  
+ Mon Jul 30 2018 10:15:02 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:03.195Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:03.196Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/670442237891:getServerAppConfig  
+  
+ Mon Jul 30 2018 10:15:03 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:03.513Z] <<< HTTP RESPONSE 200
+[info] i  storage: uploading rules storage.rules...
+[debug] [2018-07-30T15:15:03.516Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/website-86266/rulesets  
+ { source: { files: [ [Object] ] } } 
+ Mon Jul 30 2018 10:15:03 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:03.904Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:03.904Z] [rules] created ruleset projects/website-86266/rulesets/1427ba1f-ffe3-4f62-bd99-26873b6b51da
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-07-30T15:15:03.905Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/website-86266/configs  
+  
+ Mon Jul 30 2018 10:15:03 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:04.171Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:04.172Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/website-86266/configs/gmail/variables  
+  
+ Mon Jul 30 2018 10:15:04 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:04.296Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:04.297Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/website-86266/configs/gmail/variables/email  
+  
+ Mon Jul 30 2018 10:15:04 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:04.297Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/website-86266/configs/gmail/variables/password  
+  
+ Mon Jul 30 2018 10:15:04 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:04.431Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:04.451Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (38.18 KB) for uploading
+[debug] [2018-07-30T15:15:05.045Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/website-86266/locations/us-central1/functions:generateUploadUrl  
+  
+ Mon Jul 30 2018 10:15:05 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:05.569Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:05.571Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-8f83b3de-7d53-41a0-8b33-4a1a0cdada4c/d87c2ec8-d715-4919-98f8-e7a17adb9014.zip?GoogleAccessId=service-670442237891@gcf-admin-robot.iam.gserviceaccount.com&Expires=1532965505&Signature=XE3FQEd4y%2FymbHgk2szCg7B98doaQHIfHpqNLVTmiMFoU5Bm2jedVv9tNWcNRSuj%2Foc2Cq%2BH%2BHe8ByRS8a2mjmHQVpRmqMgudQpp0AsQgPhYwLqMdp5N03jqZ6f5R40zCXSYCNg%2FBDuLFBM%2Fa92vM6qBm6tVsnjv2aemFAyd7JCu%2FE4ZQazhkBdaa4IxtOtlur%2FKxvZR%2FfszvmiKoY%2FJBRkcm0AFhrsqpBW79JdMkBlrabU1vq9Z3WDwUpmRLDl81OneIRLF%2Fsb1HM1P%2Fselm0QWo1mguawzQbqBTM9r1I4z1FzhmSZw7PXQIEVXsphbTufmWZwQ4OyEiZJAAoG6VQ%3D%3D  
+ ReadStream {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { length: 1 },
+     length: 39097,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: true,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     emitClose: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: '/var/folders/8k/_5y1vn_151j_87skv3p1kvpx298qr7/T/firebase-functions-772423ihmSxNLRb3w.zip',
+  fd: 19,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 39097,
+  closed: false } 
+ Mon Jul 30 2018 10:15:05 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:06.059Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: functions folder uploaded successfully
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-07-30T15:15:07.635Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/website-86266/uploads/-LIfkRg1sHzOQKkGAjKz?fileCount=55&message=  
+  
+ Mon Jul 30 2018 10:15:07 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:13.247Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:13.247Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] ✔  hosting: 55 files uploaded successfully
+[debug] [2018-07-30T15:15:13.967Z] [hosting] deploy completed after 7906ms
+[debug] [2018-07-30T15:15:13.970Z] [rules] releasing firebase.storage/website-86266.appspot.com with ruleset projects/website-86266/rulesets/1427ba1f-ffe3-4f62-bd99-26873b6b51da
+[debug] [2018-07-30T15:15:13.970Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/website-86266/releases/firebase.storage/website-86266.appspot.com  
+ { release: 
+   { name: 'projects/website-86266/releases/firebase.storage/website-86266.appspot.com',
+     rulesetName: 'projects/website-86266/rulesets/1427ba1f-ffe3-4f62-bd99-26873b6b51da' } } 
+ Mon Jul 30 2018 10:15:13 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:14.376Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:14.377Z] [rules] updated release projects/website-86266/releases/firebase.storage/website-86266.appspot.com
+[info] ✔  storage: released rules storage.rules to firebase.storage/website-86266.appspot.com
+[debug] [2018-07-30T15:15:14.378Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/website-86266/locations/us-central1/functions  
+  
+ Mon Jul 30 2018 10:15:14 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:14.780Z] <<< HTTP RESPONSE 200
+[info] i  functions: updating function sendContactMessage...
+[debug] [2018-07-30T15:15:14.784Z] Trigger is:  {"eventTrigger":{"resource":"projects/_/instances/website-86266/refs/messages/{pushKey}","eventType":"providers/google.firebase.database/eventTypes/ref.write"}}
+[info] i  functions: updating function addMessage...
+[debug] [2018-07-30T15:15:14.786Z] Trigger is:  {"httpsTrigger":{}}
+[debug] [2018-07-30T15:15:14.787Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/website-86266/locations/us-central1/functions/sendContactMessage 
+query params: {"updateMask":"sourceUploadUrl,name,labels,eventTrigger.resource,eventTrigger.eventType"} 
+ { sourceUploadUrl: 'https://storage.googleapis.com/gcf-upload-us-central1-8f83b3de-7d53-41a0-8b33-4a1a0cdada4c/d87c2ec8-d715-4919-98f8-e7a17adb9014.zip?GoogleAccessId=service-670442237891@gcf-admin-robot.iam.gserviceaccount.com&Expires=1532965505&Signature=XE3FQEd4y%2FymbHgk2szCg7B98doaQHIfHpqNLVTmiMFoU5Bm2jedVv9tNWcNRSuj%2Foc2Cq%2BH%2BHe8ByRS8a2mjmHQVpRmqMgudQpp0AsQgPhYwLqMdp5N03jqZ6f5R40zCXSYCNg%2FBDuLFBM%2Fa92vM6qBm6tVsnjv2aemFAyd7JCu%2FE4ZQazhkBdaa4IxtOtlur%2FKxvZR%2FfszvmiKoY%2FJBRkcm0AFhrsqpBW79JdMkBlrabU1vq9Z3WDwUpmRLDl81OneIRLF%2Fsb1HM1P%2Fselm0QWo1mguawzQbqBTM9r1I4z1FzhmSZw7PXQIEVXsphbTufmWZwQ4OyEiZJAAoG6VQ%3D%3D',
+  name: 'projects/website-86266/locations/us-central1/functions/sendContactMessage',
+  labels: { 'deployment-tool': 'cli-firebase' },
+  eventTrigger: 
+   { resource: 'projects/_/instances/website-86266/refs/messages/{pushKey}',
+     eventType: 'providers/google.firebase.database/eventTypes/ref.write' } } 
+ Mon Jul 30 2018 10:15:14 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:14.791Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/website-86266/locations/us-central1/functions/addMessage 
+query params: {"updateMask":"sourceUploadUrl,name,labels,httpsTrigger"} 
+ { sourceUploadUrl: 'https://storage.googleapis.com/gcf-upload-us-central1-8f83b3de-7d53-41a0-8b33-4a1a0cdada4c/d87c2ec8-d715-4919-98f8-e7a17adb9014.zip?GoogleAccessId=service-670442237891@gcf-admin-robot.iam.gserviceaccount.com&Expires=1532965505&Signature=XE3FQEd4y%2FymbHgk2szCg7B98doaQHIfHpqNLVTmiMFoU5Bm2jedVv9tNWcNRSuj%2Foc2Cq%2BH%2BHe8ByRS8a2mjmHQVpRmqMgudQpp0AsQgPhYwLqMdp5N03jqZ6f5R40zCXSYCNg%2FBDuLFBM%2Fa92vM6qBm6tVsnjv2aemFAyd7JCu%2FE4ZQazhkBdaa4IxtOtlur%2FKxvZR%2FfszvmiKoY%2FJBRkcm0AFhrsqpBW79JdMkBlrabU1vq9Z3WDwUpmRLDl81OneIRLF%2Fsb1HM1P%2Fselm0QWo1mguawzQbqBTM9r1I4z1FzhmSZw7PXQIEVXsphbTufmWZwQ4OyEiZJAAoG6VQ%3D%3D',
+  name: 'projects/website-86266/locations/us-central1/functions/addMessage',
+  labels: { 'deployment-tool': 'cli-firebase' },
+  httpsTrigger: {} } 
+ Mon Jul 30 2018 10:15:14 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:15.395Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:15.396Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:15.397Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/website-86266/locations/us-central1/functions  
+  
+ Mon Jul 30 2018 10:15:15 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:15.616Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:15.617Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9zZW5kQ29udGFjdE1lc3NhZ2UvRVBEU1JrdVJKYnc  
+  
+ Mon Jul 30 2018 10:15:15 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:15.617Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9hZGRNZXNzYWdlL0hoYnRqYW1rMUVr  
+  
+ Mon Jul 30 2018 10:15:15 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:15.823Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:15.828Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:17.828Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9hZGRNZXNzYWdlL0hoYnRqYW1rMUVr  
+  
+ Mon Jul 30 2018 10:15:17 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:17.828Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9zZW5kQ29udGFjdE1lc3NhZ2UvRVBEU1JrdVJKYnc  
+  
+ Mon Jul 30 2018 10:15:17 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:18.055Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:18.064Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:20.058Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9hZGRNZXNzYWdlL0hoYnRqYW1rMUVr  
+  
+ Mon Jul 30 2018 10:15:20 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:20.065Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9zZW5kQ29udGFjdE1lc3NhZ2UvRVBEU1JrdVJKYnc  
+  
+ Mon Jul 30 2018 10:15:20 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:20.257Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:20.260Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:22.257Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9hZGRNZXNzYWdlL0hoYnRqYW1rMUVr  
+  
+ Mon Jul 30 2018 10:15:22 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:22.262Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9zZW5kQ29udGFjdE1lc3NhZ2UvRVBEU1JrdVJKYnc  
+  
+ Mon Jul 30 2018 10:15:22 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:22.428Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:22.447Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T15:15:24.434Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9hZGRNZXNzYWdlL0hoYnRqYW1rMUVr  
+  
+ Mon Jul 30 2018 10:15:24 GMT-0500 (CDT)
+[debug] [2018-07-30T15:15:24.450Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9zZW5kQ29udGFjdE1lc3NhZ2UvRVBEU1JrdVJKYnc  
+  
+ Mon Jul 30 2018 10:15:24 GMT-0500 (CDT)
