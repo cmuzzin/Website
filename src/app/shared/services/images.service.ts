@@ -5,7 +5,7 @@ export class ImagesService {
 
   constructor() { }
 
-  getItemImages() {
+  static getItemImages() {
     return [
       {
         collection: "My Spotify",
@@ -44,6 +44,7 @@ export class ImagesService {
           },
         ],
         description: 'A application that utilizes the API endpoints found in Spotify.',
+        icon: 'fa-spotify',
         toggle: false,
         wip: true
       },
@@ -138,6 +139,7 @@ export class ImagesService {
             title: 'Building'
           }
         ],
+        icon: 'fa-building',
         toggle: false,
         wip: true
       },
@@ -166,6 +168,7 @@ export class ImagesService {
             title: 'Step 5'
           }
         ],
+        icon:'fa-envelope-o',
         toggle: false,
         wip: true
       }

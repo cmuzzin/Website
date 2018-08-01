@@ -14,12 +14,11 @@ export class PortfolioComponent implements OnInit {
   constructor(private imageService: ImagesService) {
   }
   ngOnInit() {
-    this.collection = this.imageService.getItemImages();
+    this.collection = ImagesService.getItemImages();
   }
 
-  toggleCollection(collection) {
-    collection.toggle = !collection.toggle;
-  };
-
+  openGallery() {
+    console.log('test');
+  }
 
 }
