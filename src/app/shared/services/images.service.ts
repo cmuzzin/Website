@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
+import {BehaviorSubject} from "rxjs/BehaviorSubject";
 
 @Injectable()
 export class ImagesService {
-
+  toggleGallery: BehaviorSubject<any> = new BehaviorSubject<any>(null);
   constructor() { }
 
   static getItemImages() {

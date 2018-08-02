@@ -10,15 +10,18 @@ import {collapse} from "../shared/animations/animations";
 })
 export class PortfolioComponent implements OnInit {
   collection: Array<any> = [];
+  toggleCarousel: boolean;
 
   constructor(private imageService: ImagesService) {
   }
   ngOnInit() {
     this.collection = ImagesService.getItemImages();
+    this.toggleCarousel = false;
   }
 
   openGallery() {
-    console.log('test');
+    this.toggleCarousel = true;
+    this.imageService.toggleGallery.next(this.toggleCarousel);
   }
 
 }
