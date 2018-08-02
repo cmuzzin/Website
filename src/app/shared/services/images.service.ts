@@ -44,13 +44,12 @@ export class ImagesService {
             title: 'Add To Playlist'
           },
         ],
-        description: 'A application that utilizes the API endpoints found in Spotify.',
         icon: 'fa-spotify',
         toggle: false,
         wip: true
       },
       {
-        collection: 'Item Web',
+        collection: `Dillard's App Number One`,
         images: [
           {
             src: '../../assets/ItemWeb/itemWeb_existingProduct.PNG',
@@ -79,7 +78,7 @@ export class ImagesService {
         wip: false
       },
       {
-        collection: 'MCM - Marketing Campaign Manager',
+        collection: `Dillard's App Number 2`,
         images: [
           {
             src: '../../assets/MCM/mcm_login.PNG',
@@ -110,13 +109,12 @@ export class ImagesService {
             title: 'Admin'
           }
         ],
-        description: 'Built a scheduling calendar for the marking team to determine when to send emails. Users can drag and drop a email request to the date they wish to send it.',
         icon:'fa-calendar',
         toggle:  false,
         wip: false
       },
       {
-        collection: 'Store Planning & Construction',
+        collection: `Dillard's App Number 3`,
         description: 'Fresh application for the current process of planning and setting up a store.',
         images: [
           {
@@ -145,8 +143,7 @@ export class ImagesService {
         wip: true
       },
       {
-        collection: 'New Email Work Flow',
-        description: 'Redoing the email for work flow for the marketing team. Custom build a wizard with Ui routing as the driver.',
+        collection: `Dillard's App Number 4`,
         images: [
           {
             src: '../../assets/Email_Flow_Images/rememberMe.png',
