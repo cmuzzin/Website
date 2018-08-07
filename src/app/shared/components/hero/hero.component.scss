@@ -36,8 +36,13 @@
   right: 0;
   z-index: 30;
   background: #394053;
+<<<<<<< HEAD
   box-shadow: 0 1px 5px rgba(10, 10, 10, .2);
   height: 65px;
+=======
+  box-shadow: 1px 0 4px #888;
+  transition: height 3s;
+>>>>>>> 32c8cb48fe5d983f1fb722f9be89d3702daea712
   .navbar-menu-background-sticky {
     background: #394053;
   }
