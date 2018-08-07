@@ -49,7 +49,7 @@ export class ImagesService {
         wip: true
       },
       {
-        collection: `Dillard's App Number One`,
+        collection: `App One`,
         images: [
           {
             src: '../../assets/ItemWeb/itemWeb_existingProduct.PNG',
@@ -78,7 +78,7 @@ export class ImagesService {
         wip: false
       },
       {
-        collection: `Dillard's App Number 2`,
+        collection: `App Two`,
         images: [
           {
             src: '../../assets/MCM/mcm_login.PNG',
@@ -114,7 +114,7 @@ export class ImagesService {
         wip: false
       },
       {
-        collection: `Dillard's App Number 3`,
+        collection: `App Three`,
         description: 'Fresh application for the current process of planning and setting up a store.',
         images: [
           {
@@ -143,7 +143,7 @@ export class ImagesService {
         wip: true
       },
       {
-        collection: `Dillard's App Number 4`,
+        collection: `App Four`,
         images: [
           {
             src: '../../assets/Email_Flow_Images/rememberMe.png',

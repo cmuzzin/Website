@@ -1,6 +1,6 @@
 <section class="has-background-white">
   <div class="row mt-1">
-    <h2 class="title is-1 pt-1 has-text-centered">About Me</h2>
+    <h2 class="title is-1 pt-3 has-text-centered">About Me</h2>
     <div class="columns is-centered m-3">
       <div class="column is-one-third">
         <figure class="image">
@@ -30,7 +30,7 @@
   </div>
 </section>
 <section>
-  <div class="row">
+  <div class="row mt-3">
     <div class="columns m-3">
       <div class="column is-one-third has-text-centered is-clipped">
         <h2 class="title is-1">Stats</h2>
@@ -41,27 +41,35 @@
         <div class="columns is-multiline">
           <div class="column is-half">
             <label class="label">Angular</label>
-            <progress class="progress is-info" value="80" max="100">75%</progress>
+            <progress class="progress is-info" value="90" max="100">90%</progress>
           </div>
           <div class="column is-half">
             <label class="label">Angular JS</label>
-            <progress class="progress is-info" value="85" max="100">80%</progress>
+            <progress class="progress is-info" value="90" max="100">90%</progress>
+          </div>
+          <div class="column is-half">
+            <label class="label">Ionic</label>
+            <progress class="progress is-info" value="50" max="100">50%</progress>
           </div>
           <div class="column is-half">
             <label class="label">jQuery</label>
             <progress class="progress is-info" value="55" max="100">55%</progress>
           </div>
           <div class="column is-half">
-            <label class="label">Ionic</label>
-            <progress class="progress is-info" value="70" max="100">60%</progress>
+            <label class="label">Node JS</label>
+            <progress class="progress is-info" value="20" max="100">20%%</progress>
+          </div>
+          <div class="column is-half">
+            <label class="label">Typescript</label>
+            <progress class="progress is-info" value="75" max="100">75%%</progress>
           </div>
           <div class="column is-half">
             <label class="label">Vue JS</label>
             <progress class="progress is-info" value="25" max="100">25%</progress>
           </div>
           <div class="column is-half">
-            <label class="label">Node JS</label>
-            <progress class="progress is-info" value="20" max="100">20%%</progress>
+            <label class="label">Vanilla JS</label>
+            <progress class="progress is-info" value="75" max="100">75%%</progress>
           </div>
         </div>
       </div>
@@ -71,19 +79,31 @@
         <div class="columns is-multiline">
           <div class="column is-half">
             <label class="label">Bootstrap</label>
-            <progress class="progress is-primary" value="85" max="100">85%</progress>
+            <progress class="progress is-primary" value="100" max="100">100%</progress>
           </div>
           <div class="column is-half">
             <label class="label">Bulma</label>
-            <progress class="progress is-primary" value="85" max="100">85%</progress>
+            <progress class="progress is-primary" value="100" max="100">100%</progress>
+          </div>
+          <div class="column is-half">
+            <label class="label">Material</label>
+            <progress class="progress is-primary" value="25" max="100">25%</progress>
+          </div>
+          <div class="column is-half">
+            <label class="label">SASS</label>
+            <progress class="progress is-primary" value="50" max="100">50%</progress>
+          </div>
+          <div class="column is-half">
+            <label class="label">Scss</label>
+            <progress class="progress is-primary" value="75" max="100">75%</progress>
           </div>
           <div class="column is-half">
             <label class="label">Semantic</label>
             <progress class="progress is-primary" value="35" max="100">40%</progress>
           </div>
           <div class="column is-half">
-            <label class="label">Material</label>
-            <progress class="progress is-primary" value="25" max="100">25%</progress>
+            <label class="label">Vanilla</label>
+            <progress class="progress is-primary" value="75" max="100">75%</progress>
           </div>
         </div>
       </div>
@@ -92,7 +112,7 @@
 </section>
 <section class="has-background-white">
   <div class="row mt-3">
-    <h2 class="title is-1 has-text-centered pt-1">Experience</h2>
+    <h2 class="title is-1 has-text-centered pt-3">Experience</h2>
     <div class="columns m-3">
       <div class="column is-one-third">
         <h2 class="subtitle is-3">My Spotify</h2>
@@ -127,53 +147,54 @@
   </div>
 </section>
 <section>
-  <div class="container">
-    <h2 class="title is-1 mt-3 has-text-centered">Contact</h2>
-    <div class="columns m-3">
-      <div class="column">
-        <form [formGroup]="form" (ngSubmit)="onSubmit()" style="padding-bottom: 10px">
-          <div class="field is-horizontal">
-            <div class="field-body">
-              <div class="field">
-                <p class="control is-expanded has-icons-left">
-                  <input class="input" type="text" placeholder="Name" name="name" id="name" formControlName="name"
-                         [ngClass]="{'is-danger': formErrors.name}">
-                  <span class="icon is-small is-left">
+  <div class="row mt-3">
+    <div class="container">
+      <h2 class="title is-1 pt-3 has-text-centered">Contact</h2>
+      <div class="columns m-3">
+        <div class="column">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()" style="padding-bottom: 10px">
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <p class="control is-expanded has-icons-left">
+                    <input class="input" type="text" placeholder="Name" name="name" id="name" formControlName="name"
+                           [ngClass]="{'is-danger': formErrors.name}">
+                    <span class="icon is-small is-left">
           <i class="fa fa-user"></i>
         </span>
-                </p>
-                <p class="help is-danger is-small">{{formErrors.name}}</p>
-              </div>
-              <div class="field">
-                <p class="control is-expanded has-icons-left has-icons-right">
-                  <input class="input" type="email" placeholder="Email" name="email" id="email"
-                         formControlName="email"
-                         [ngClass]="{'is-danger': formErrors.email}">
-                  <span class="icon is-small is-left">
+                  </p>
+                  <p class="help is-danger is-small">{{formErrors.name}}</p>
+                </div>
+                <div class="field">
+                  <p class="control is-expanded has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Email" name="email" id="email"
+                           formControlName="email"
+                           [ngClass]="{'is-danger': formErrors.email}">
+                    <span class="icon is-small is-left">
           <i class="fa fa-envelope"></i>
         </span>
-                </p>
-                <p class="help is-danger is-small">{{formErrors.email}}</p>
-              </div>
-            </div>
-          </div>
-          <div class="field is-horizontal">
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <input class="input" type="text" placeholder="Subject" name="subject" id="subject"
-                         formControlName="subject"
-                         [ngClass]="{'is-danger': formErrors.subject}">
+                  </p>
+                  <p class="help is-danger is-small">{{formErrors.email}}</p>
                 </div>
-                <p class="help is-danger is-small">{{formErrors.subject}}</p>
               </div>
             </div>
-          </div>
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Subject" name="subject" id="subject"
+                           formControlName="subject"
+                           [ngClass]="{'is-danger': formErrors.subject}">
+                  </div>
+                  <p class="help is-danger is-small">{{formErrors.subject}}</p>
+                </div>
+              </div>
+            </div>
 
-          <div class="field is-horizontal">
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
                             <textarea class="textarea"
                                       placeholder="Leave a me a message"
                                       name="message"
@@ -183,23 +204,24 @@
                                       [ngClass]="{'is-danger': formErrors.message}">
 
                             </textarea>
-                </div>
-                <p class="help is-danger is-small">{{formErrors.message}}</p>
-              </div>
-            </div>
-          </div>
-          <div class="field is-horizontal">
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <button type="submit" class="button is-large is-success is-pulled-right" [disabled]="form.invalid">
-                    Send message
-                  </button>
+                  </div>
+                  <p class="help is-danger is-small">{{formErrors.message}}</p>
                 </div>
               </div>
             </div>
-          </div>
-        </form>
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <button type="submit" class="button is-large is-success is-pulled-right" [disabled]="form.invalid">
+                      Send message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

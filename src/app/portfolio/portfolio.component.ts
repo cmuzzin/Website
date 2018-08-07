@@ -17,6 +17,7 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
     this.collection = ImagesService.getItemImages();
     this.toggleCarousel = false;
+    this.imageService.toggleGallery.next(this.toggleCarousel);
   }
 
   openGallery() {
