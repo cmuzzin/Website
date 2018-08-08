@@ -1,36 +1,34 @@
-<section class="has-background-white">
-  <div class="row mt-1">
+<section class="mt-1">
+  <div class="row">
     <h2 class="title is-1 pt-3 has-text-centered">About Me</h2>
-    <div class="columns is-centered m-3">
+    <div class="columns is-centered m-5">
       <div class="column is-one-third">
         <figure class="image">
-          <img src="../../assets/IMG_0077.JPG" class="shadow mx-auto mb-5">
+          <img  src="../../assets/IMG_0077.JPG" class="shadow mx-auto is-rounded">
         </figure>
       </div>
       <div class="column is-two-thirds has-text-centered">
         <div class="has-text-justified">
-          <article class="message is-info">
-            <div class="message-body is-size-5">
-              <p class="mt-2">My name is Chris Muzzin and I'm a full time Front End Developer who enjoys creating
-                organized solutions.</p>
-              <p class="mt-2">I guess you're here because you want to know more about me, huh?</p>
-              <p class="mt-2">I love music, dogs, gaming, coding, hiking, soccer (watching and playing) , and being a
-                part time beach bum (although I prefer this to be full-time).</p>
-              <p class="mt-2">Currently, I am a Front End Developer for Dillard’s Headquarters and dabble into my own
-                side projects for self learning.
-                At Dillard’s I develop internal web applications that cater to setting up data to our eComm website and
-                marketing campaigns.
-                I work closely with our users in order find out how I can best fit their needs and make their lives
-                easier.</p>
-            </div>
-          </article>
+          <div class="is-size-5">
+            <p class="mt-2">My name is Chris Muzzin and I'm a full time Front End Developer who enjoys creating
+              organized solutions.</p>
+            <p class="mt-2">I guess you're here because you want to know more about me, huh?</p>
+            <p class="mt-2">I love music, dogs, gaming, coding, hiking, soccer (watching and playing) , and being a
+              part time beach bum (although I prefer this to be full-time).</p>
+            <p class="mt-2">Currently, I am a Front End Developer for Dillard’s Headquarters and dabble into my own
+              side projects for self learning.
+              At Dillard’s I develop internal web applications that cater to setting up data to our eComm website and
+              marketing campaigns.
+              I work closely with our users in order find out how I can best fit their needs and make their lives
+              easier.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 <section>
-  <div class="row mt-3">
+  <div class="row mt-5">
     <div class="columns m-3">
       <div class="column is-one-third has-text-centered is-clipped">
         <h2 class="title is-1">Stats</h2>
@@ -40,7 +38,7 @@
         <h3 class="subtitle is-3">Javascript</h3>
         <div class="columns is-multiline">
           <div class="column is-half">
-            <label class="label">Angular</label>
+            <label class="label">Angular <small class="has-text-grey-dark"> - 2 years experience</small></label>
             <progress class="progress is-info" value="90" max="100">90%</progress>
           </div>
           <div class="column is-half">
@@ -56,7 +54,7 @@
             <progress class="progress is-info" value="55" max="100">55%</progress>
           </div>
           <div class="column is-half">
-            <label class="label">Node JS</label>
+            <label class="label">Node.js</label>
             <progress class="progress is-info" value="20" max="100">20%%</progress>
           </div>
           <div class="column is-half">
@@ -110,9 +108,9 @@
     </div>
   </div>
 </section>
-<section class="has-background-white">
-  <div class="row mt-3">
-    <h2 class="title is-1 has-text-centered pt-3">Experience</h2>
+<section>
+  <div class="row">
+    <h2 class="title is-1 has-text-centered mt-5">Experience</h2>
     <div class="columns m-3">
       <div class="column is-one-third">
         <h2 class="subtitle is-3">My Spotify</h2>
@@ -147,9 +145,9 @@
   </div>
 </section>
 <section>
-  <div class="row mt-3">
+  <div class="row">
     <div class="container">
-      <h2 class="title is-1 pt-3 has-text-centered">Contact</h2>
+      <h2 class="title is-1 mt-3 has-text-centered">Contact</h2>
       <div class="columns m-3">
         <div class="column">
           <form [formGroup]="form" (ngSubmit)="onSubmit()" style="padding-bottom: 10px">
@@ -213,7 +211,7 @@
               <div class="field-body">
                 <div class="field">
                   <div class="control">
-                    <button type="submit" class="button is-large is-success is-pulled-right" [disabled]="form.invalid">
+                    <button type="submit" class="button is-link is-pulled-right" [disabled]="form.invalid">
                       Send message
                     </button>
                   </div>
