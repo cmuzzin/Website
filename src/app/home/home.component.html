@@ -1,15 +1,15 @@
-<section class="mt-1">
+<section>
   <div class="row">
-    <h2 class="title is-1 pt-3 has-text-centered">About Me</h2>
-    <div class="columns is-centered m-5">
+    <h2 class="title is-1 has-text-centered">About Me</h2>
+    <div class="columns is-centered">
       <div class="column is-one-third">
         <figure class="image">
-          <img  src="../../assets/IMG_0077.JPG" class="shadow mx-auto is-rounded">
+          <img src="../../assets/IMG_0077.JPG" class="shadow mx-auto">
         </figure>
       </div>
       <div class="column is-two-thirds has-text-centered">
         <div class="has-text-justified">
-          <div class="is-size-5">
+          <div class="section-body">
             <p class="mt-2">My name is Chris Muzzin and I'm a full time Front End Developer who enjoys creating
               organized solutions.</p>
             <p class="mt-2">I guess you're here because you want to know more about me, huh?</p>
@@ -27,9 +27,9 @@
     </div>
   </div>
 </section>
-<section>
-  <div class="row mt-5">
-    <div class="columns m-3">
+<section class="light-grey">
+  <div class="row">
+    <div class="columns">
       <div class="column is-one-third has-text-centered is-clipped">
         <h2 class="title is-1">Stats</h2>
         <i class="fa fa-keyboard-o fa-lg" aria-hidden="true"></i>
@@ -38,7 +38,8 @@
         <h3 class="subtitle is-3">Javascript</h3>
         <div class="columns is-multiline">
           <div class="column is-half">
-            <label class="label">Angular <small class="has-text-grey-dark"> - 2 years experience</small></label>
+            <label class="label">Angular
+            </label>
             <progress class="progress is-info" value="90" max="100">90%</progress>
           </div>
           <div class="column is-half">
@@ -110,8 +111,8 @@
 </section>
 <section>
   <div class="row">
-    <h2 class="title is-1 has-text-centered mt-5">Experience</h2>
-    <div class="columns m-3">
+    <h2 class="title is-1 has-text-centered">Experience</h2>
+    <div class="columns">
       <div class="column is-one-third">
         <h2 class="subtitle is-3">My Spotify</h2>
         <p class="mt-3 has-text-justified">Developed a web application that utilizes Spotify's API and demonstrates a
@@ -144,10 +145,10 @@
     </div>
   </div>
 </section>
-<section>
+<section class="light-grey contact">
   <div class="row">
     <div class="container">
-      <h2 class="title is-1 mt-3 has-text-centered">Contact</h2>
+      <h2 class="title is-1 has-text-centered">Contact</h2>
       <div class="columns m-3">
         <div class="column">
           <form [formGroup]="form" (ngSubmit)="onSubmit()" style="padding-bottom: 10px">

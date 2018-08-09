@@ -3,39 +3,35 @@
 @import "../node_modules/bulma-divider/dist/css/bulma-divider";
 @import "../node_modules/bulma-carousel/dist/css/bulma-carousel";
 @import "../node_modules/font-awesome/css/font-awesome.css";
-@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 @import "app/shared/css/utilities";
 
 
 
 body{
-  background-color: #f3f3f3;
   font-family: 'Roboto Slab', serif;
-}
-
-.hero-body .container {
-  max-width: 700px;
-}
-.hero-body .title {
-  color: hsl(192,17%,99%) !important;
-}
-.hero-body .subtitle {
-  color: hsl(192,17%,99%) !important;
-  padding-top: 2rem;
-  line-height: 1.5;
-}
-
-.is-spotify {
-  background-color: transparent;
-  border-color: #23d160 !important;
-  color: #23d160 !important;
-  &:hover, &:focus{
-    background-color: #23d160;
-    color: #fff !important;
-  }
 }
 
 .fa.fa-lg {
   font-size: 13rem;
   color: #394053;
+}
+
+.section-body {
+  color: #555;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+.light-grey {
+  background-color: #f6f6f6;
+
+}
+
+section {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 85px 0;
+  .row {
+    margin: 30px;
+  }
 }
