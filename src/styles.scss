@@ -5,9 +5,7 @@
 @import "../node_modules/font-awesome/css/font-awesome.css";
 @import "app/shared/css/utilities";
 
-
-
-body{
+body {
   font-family: 'Roboto Slab', serif;
 }
 
@@ -18,7 +16,7 @@ body{
 
 .section-body {
   color: #555;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 200;
   line-height: 1.4;
 }
