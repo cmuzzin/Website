@@ -24,34 +24,6 @@
   background-color: #999;
 }
 
-.navbar{
-  background: transparent;
-  .navbar-menu {
-    background: transparent;
-    box-shadow: none;
-    .navbar-item {
-      color: white;
-      &:hover {
-        background-color: #292929;
-        color: whitesmoke;
-      }
-    }
-  }
-}
-
-.is-sticky {
-  left: 0;
-  position: fixed;
-  right: 0;
-  z-index: 30;
-  background: #394053;
-  height: 65px;
-  box-shadow: 1px 0 4px #888;
-  transition: height 3s;
-  .navbar-menu-background-sticky {
-    background: #394053;
-  }
-}
 
 @media (max-width: 768px) {
   .mobile {
