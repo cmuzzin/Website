@@ -1,21 +1,27 @@
 <section>
   <div class="row">
-    <h2 class="title is-1 m-4 has-text-centered">About Me</h2>
     <div class="columns">
       <div class="column is-two-fifths">
         <figure class="image">
-          <img src="../../assets/about-me-image.JPG" class="shadow mx-auto">
+          <img src="../../assets/about-me-image.JPG" class="mx-auto">
         </figure>
       </div>
       <div class="column is-three-fifths has-text-centered">
         <div class="has-text-justified">
           <div class="section-body m-4">
-            <p class="mt-2">My name is Chris Muzzin and I'm a full time Front End Developer who enjoys creating
-              organized solutions.</p>
-            <p class="mt-2">A few things I enjoy are live music, dogs, gaming, coding, hiking, watching and playing soccer, boxing, snow boarding, and traveling.</p>
-            <p class="mt-2">Currently, I am a Front End Developer for Dillard’s Headquarters and dive into my own
-              side projects for self learning.
-              At Dillard’s, I develop internal web applications that cater to setting up data for our eCommerce website and marketing campaigns.
+            <p class="mt-2">My name is Chris Muzzin and I'm a full time Front-end Developer who enjoys creating organized solutions.</p>
+            <h2 class="is-size-4 mt-2">A few things of my hobbies</h2>
+            <ul>
+              <li>Soccer - watching and playing</li>
+              <li>Boxing</li>
+              <li>Snow Boarding</li>
+              <li>Live music</li>
+              <li>Gaming</li>
+              <li>Hiking</li>
+              <li>Traveling</li>
+            </ul>
+            <p class="mt-2">I am currently working for Dillard’s where I develop intranet Front-end applications that cater to retail driven processes.
+              In addition, I like to work on side projects in my spare time.
             </p>
           </div>
         </div>
@@ -27,11 +33,11 @@
   <div class="row">
     <div class="columns">
       <div class="column is-one-third has-text-centered is-clipped">
-        <h2 class="title is-1">Stats</h2>
+        <h2 class="title is-3">Stats</h2>
         <i class="fa fa-keyboard-o fa-lg" aria-hidden="true"></i>
       </div>
       <div class="column is-one-third">
-        <h3 class="subtitle is-3">Javascript</h3>
+        <h3 class="subtitle is-4">Javascript</h3>
         <div class="columns is-multiline">
           <div class="column is-half">
             <label class="label">Angular</label>
@@ -69,7 +75,7 @@
       </div>
       <div class="is-divider-vertical"></div>
       <div class="column is-one-quarter">
-        <h3 class="subtitle is-3">CSS</h3>
+        <h3 class="subtitle is-4">CSS</h3>
         <div class="columns is-multiline">
           <div class="column is-half">
             <label class="label">Bootstrap</label>
@@ -106,36 +112,26 @@
 </section>
 <section>
   <div class="row">
-    <h2 class="title is-1 has-text-centered">Experience</h2>
-    <div class="columns">
+    <h2 class="title is-3 has-text-centered">Experience</h2>
+    <div class="columns has-text-centered">
       <div class="column is-one-third">
-        <h2 class="subtitle is-3">My Spotify</h2>
-        <p class="mt-3 has-text-justified">Developed a web application that utilizes Spotify's API and demonstrates a
+        <h2 class="subtitle is-4">My Spotify</h2>
+        <p>Developed a web application that utilizes Spotify's API and demonstrates a
           lot of functionality found on the Spotify web player.
           Built with Angular and Bulma.
         </p>
-        <p class="mt-3 mb-3">
-          <a class="button is-link is-outlined" href="https://github.com/cmuzzin/My-Spotify">Github
-            <i class="fa fa-external-link ml-2" aria-hidden="true"></i>
-          </a>
-        </p>
+        <a class="is-link mt-3" href="https://github.com/cmuzzin/My-Spotify">Learn more</a>
       </div>
       <div class="column is-one-third">
-        <h2 class="subtitle is-3">Website</h2>
+        <h2 class="subtitle is-4">Website</h2>
         <p class="mt-3">Build and maintain my personal website to practice and explore web design techniques. This site
           is powered by Angular, Bulma, Nodemailer, and Firebase.</p>
-        <p class="mt-3 mb-3"><a class="button is-link is-outlined" href="https://github.com/cmuzzin/Portfolio">Github
-          <i class="fa fa-external-link ml-2" aria-hidden="true"></i>
-        </a>
-        </p>
+        <a class="is-link mt-3" href="https://github.com/cmuzzin/Portfolio">Learn more</a>
       </div>
       <div class="column is-one-third">
-        <h2 class="subtitle is-3">Dillard's</h2>
-        <p class="mt-3">
-          Embedded in multiple agile teams working closely with developers, business analysts, and QA's to build
-          consistent, usable, and logical interfaces for users. Primarily spend my time building out Angular and Angular
-          JS single page applications.
-        </p>
+        <h2 class="subtitle is-4">Dillard's</h2>
+        <p>Embedded in multiple agile teams working closely with developers, business analysts, and QA's to build
+          consistent, usable, and logical interfaces for users. Primarily spend my time building out responsive and single page applications using Angular, AngularJS, and Bootstrap. </p>
       </div>
     </div>
   </div>
@@ -143,8 +139,8 @@
 <section class="light-grey contact">
   <div class="row">
     <div class="container">
-      <h2 class="title is-1 has-text-centered">Contact</h2>
-      <div class="columns m-3">
+      <h2 class="title is-3 has-text-centered">Contact</h2>
+      <div class="columns">
         <div class="column">
           <form [formGroup]="form" (ngSubmit)="onSubmit()" style="padding-bottom: 10px">
             <div class="field is-horizontal">
