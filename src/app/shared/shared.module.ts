@@ -13,10 +13,11 @@ import {AppRoutingModule} from "../app-routing.module";
   imports: [
     CommonModule,
     AppRoutingModule
+
   ],
   declarations: [FooterComponent, HeroComponent, NavComponent, CarouselComponent, ModalComponent],
   entryComponents: [],
-  exports: [FooterComponent, HeroComponent, NavComponent, CarouselComponent, ModalComponent]
+  exports: [AppRoutingModule, FooterComponent, HeroComponent, NavComponent, CarouselComponent, ModalComponent]
 })
 export class SharedModule {
   static forRoot(): ModuleWithProviders {
