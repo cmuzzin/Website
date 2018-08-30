@@ -21,6 +21,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "@fortawesome/fontawesome-free": "^5.2.0",
     "@types/lodash": "^4.14.106",
     "angularfire2": "^5.0.0-rc.3",
     "bulma-carousel": "^3.0.0",

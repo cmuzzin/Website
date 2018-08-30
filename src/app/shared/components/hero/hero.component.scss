@@ -1,3 +1,15 @@
+.hero-body .container {
+  max-width: 700px;
+}
+.hero-body .title {
+  color: hsl(192,17%,99%) !important;
+}
+.hero-body .subtitle {
+  color: hsl(192,17%,99%) !important;
+  padding-top: 2rem;
+  line-height: 1.5;
+}
+
 .hero-bg {
   height: auto;
   width: auto;
@@ -12,37 +24,6 @@
   background-color: #999;
 }
 
-.navbar{
-  background: transparent;
-  .navbar-menu {
-    background: transparent;
-    box-shadow: none;
-    .navbar-item {
-      color: white;
-      &:hover {
-        background-color: #292929;
-        color: whitesmoke;
-      }
-      .link-text {
-        font-size: 1.5em;
-      }
-    }
-  }
-}
-
-.is-sticky {
-  left: 0;
-  position: fixed;
-  right: 0;
-  z-index: 30;
-  background: #394053;
-  box-shadow: 0 1px 5px rgba(10, 10, 10, .2);
-  height: 65px;
-
-  .navbar-menu-background-sticky {
-    background: #394053;
-  }
-}
 
 @media (max-width: 768px) {
   .mobile {
