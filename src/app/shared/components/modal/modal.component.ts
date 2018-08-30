@@ -13,7 +13,6 @@ export class ModalComponent implements OnInit {
 
   ngOnInit() {
     this.imageService.toggleGallery.subscribe((toggle) => {
-      console.log(toggle);
        this.toggleModal = toggle;
     })
   }

@@ -6,20 +6,13 @@ import {HeroComponent} from "./components/hero/hero.component";
 import {NavComponent} from "./components/nav/nav.component";
 import {CarouselComponent} from './components/carousel/carousel.component';
 import {ModalComponent} from './components/modal/modal.component';
-import {ToastrModule} from "ngx-toastr";
-import {AngularFireModule} from "angularfire2";
-import {AngularFireDatabaseModule} from "angularfire2/database";
-import {environment} from "../../environments/environment";
 import {CommonModule} from "@angular/common";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {AppRoutingModule} from "../app-routing.module";
 
 @NgModule({
   imports: [
     CommonModule,
-    ToastrModule.forRoot(),
-    BrowserAnimationsModule,
-    AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AppRoutingModule
   ],
   declarations: [FooterComponent, HeroComponent, NavComponent, CarouselComponent, ModalComponent],
   entryComponents: [],
