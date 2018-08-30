@@ -1,34 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule} from 'angularfire2/database';
-import { environment } from '../environments/environment';
-import {ReactiveFormsModule} from "@angular/forms";
+import {NgModule} from '@angular/core';
+import {AppComponent} from './app.component';
 import {SharedModule} from "./shared/shared.module";
-import {ToastrModule} from "ngx-toastr";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { HomeComponent } from './home/home.component';
+import {PortfolioComponent} from './portfolio/portfolio.component';
+import {HomeModule} from "./home/home.module";
+import {BrowserModule} from "@angular/platform-browser";
+import {CommonModule} from "@angular/common";
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
-    HomeComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
-    ReactiveFormsModule,
-    AngularFireDatabaseModule,
-    BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot(), // ToastrModule added
     SharedModule.forRoot(),
-    AngularFireModule.initializeApp(environment.firebase)
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
