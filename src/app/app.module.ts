@@ -9,6 +9,7 @@ import {AngularFireModule} from "angularfire2";
 import {environment} from "../environments/environment";
 import {SharedModule} from "./shared/shared.module";
 import {HomeModule} from "./home/home.module";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {HomeModule} from "./home/home.module";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     SharedModule.forRoot(),
     ToastrModule.forRoot(),
     AngularFireDatabaseModule,

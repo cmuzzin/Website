@@ -1,16 +1,16 @@
 <section>
   <div class="row">
     <div class="columns is-multiline">
-      <div class="column is-one-third" *ngFor="let collection of collection">
+      <div class="column is-one-third" *ngFor="let gallery of galleries">
         <div class="overlay-container">
           <div class="card image shadow">
             <div class="card-header">
-              <p class="card-header-title">{{collection.collection}}</p>
+              <p class="card-header-title">{{gallery.name}}</p>
             </div>
             <div class="card-body">
               <div class="card-content has-text-centered">
                 <div></div>
-                <i class="fa {{collection.icon}}" style="font-size: 10rem"></i>
+                <i class="fa {{gallery.icon}}" style="font-size: 10rem"></i>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {ImagesService} from "../shared/services/images.service";
+import {ImagesService} from "../shared/services/image.service";
 import {collapse} from "../shared/animations/animations";
+import {Gallery} from "../shared/dtos/gallary";
 
 @Component({
   selector: 'app-portfolio',
@@ -9,20 +10,21 @@ import {collapse} from "../shared/animations/animations";
   animations: [collapse]
 })
 export class PortfolioComponent implements OnInit {
-  collection: Array<any> = [];
-  toggleCarousel: boolean;
+  showGallery: boolean;
+  galleries: Array<Gallery>;
 
   constructor(private imageService: ImagesService) {
   }
   ngOnInit() {
-    this.collection = ImagesService.getItemImages();
-    this.toggleCarousel = false;
-    this.imageService.toggleGallery.next(this.toggleCarousel);
+     this.imageService.getImages().subscribe(data => {
+         this.galleries = data;
+     })
+
   }
 
   openGallery() {
-    this.toggleCarousel = true;
-    this.imageService.toggleGallery.next(this.toggleCarousel);
-  }
+    this.showGallery = !this.showGallery;
+    this.imageService.toggleGallery.next(this.showGallery);
+  };
 
 }

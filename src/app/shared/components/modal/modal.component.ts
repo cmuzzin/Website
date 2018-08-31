@@ -1,6 +1,6 @@
 ///<reference path="../../../../../node_modules/@angular/core/src/metadata/directives.d.ts"/>
 import {Component, Input, OnInit} from '@angular/core';
-import {ImagesService} from "../../services/images.service";
+import {ImagesService} from "../../services/image.service";
 
 @Component({
   selector: 'app-modal',
@@ -8,17 +8,17 @@ import {ImagesService} from "../../services/images.service";
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit {
-  toggleModal: boolean;
+  showModdal: boolean;
   constructor(private imageService: ImagesService) { }
 
   ngOnInit() {
     this.imageService.toggleGallery.subscribe((toggle) => {
-       this.toggleModal = toggle;
+       this.showModdal = toggle;
     })
   }
 
   close() {
-    this.toggleModal = false;
+    this.showModdal = false;
   }
 
 }
