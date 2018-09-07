@@ -1,5 +1,4 @@
-///<reference path="../../../../../node_modules/@angular/core/src/metadata/directives.d.ts"/>
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ImagesService} from "../../services/images.service";
 
 @Component({
@@ -9,11 +8,11 @@ import {ImagesService} from "../../services/images.service";
 })
 export class ModalComponent implements OnInit {
   toggleModal: boolean;
+  images: Array<any>;
   constructor(private imageService: ImagesService) { }
 
   ngOnInit() {
     this.imageService.toggleGallery.subscribe((toggle) => {
-      console.log(toggle);
        this.toggleModal = toggle;
     })
   }
