@@ -7,15 +7,24 @@ import {Gallery} from "../dtos/gallary";
 @Injectable()
 export class ImagesService {
   private imageUrl = 'assets/api/images/images.json';
-  toggleGallery: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  openGallery: BehaviorSubject<any> = new BehaviorSubject<any>(null);
 
   constructor(private http: HttpClient) {
   }
 
-  getImages() {
+  getGalleries() {
     return this.http.get(this.imageUrl)
       .map((data: Array<Gallery>) => data.map(val => new Gallery(val)))
       .catch(this.handleError)
+  };
+
+  getGallery(id: number) {
+     return this.http.get(this.imageUrl)
+       .map((data: Array<Gallery>) => {
+         const gallery = data.find(val => val.galleryId === id);
+         return new Gallery(gallery);
+       })
+       .catch(this.handleError)
   };
 
   private handleError(err: HttpErrorResponse) {

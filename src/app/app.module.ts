@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
-import {PortfolioComponent} from './portfolio/portfolio.component';
 import {BrowserModule} from "@angular/platform-browser";
 import {ToastrModule} from "ngx-toastr";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
@@ -10,11 +9,12 @@ import {environment} from "../environments/environment";
 import {SharedModule} from "./shared/shared.module";
 import {HomeModule} from "./home/home.module";
 import {HttpClientModule} from "@angular/common/http";
+import {PortfolioComponent} from "./portfolio/portfolio.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    PortfolioComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
