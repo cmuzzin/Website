@@ -1,6 +1,5 @@
 import {AfterViewInit, Component, HostListener, OnInit} from '@angular/core';
 import {stickyNav} from "../../animations/animations";
-import {element} from "protractor";
 
 @Component({
   selector: 'app-hero',
