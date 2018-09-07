@@ -7,6 +7,7 @@ import {NavComponent} from "./components/nav/nav.component";
 import {ModalComponent} from './components/modal/modal.component';
 import {CommonModule} from "@angular/common";
 import {AppRoutingModule} from "../app-routing.module";
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   imports: [
@@ -14,9 +15,9 @@ import {AppRoutingModule} from "../app-routing.module";
     AppRoutingModule
 
   ],
-  declarations: [FooterComponent, HeroComponent, NavComponent, ModalComponent],
+  declarations: [FooterComponent, HeroComponent, NavComponent, ModalComponent, CarouselComponent],
   entryComponents: [],
-  exports: [AppRoutingModule, FooterComponent, HeroComponent, NavComponent, ModalComponent]
+  exports: [AppRoutingModule, FooterComponent, HeroComponent, NavComponent, ModalComponent, CarouselComponent]
 })
 export class SharedModule {
   static forRoot(): ModuleWithProviders {

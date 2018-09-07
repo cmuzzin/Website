@@ -1,27 +1,43 @@
 [
   {
-    "name": "Spotify Playground",
-    "images": [],
-    "icon": "fa-spotify"
+    "galleryId": "1",
+    "galleryName": "Spotify Playground",
+    "images": [
+      {
+        "imageId": "1",
+        "imageUrl": "https://i.imgur.com/IU0YMLa.png?1"
+      },
+      {
+        "imageId": "2",
+        "imageUrl": "https://i.imgur.com/oT0hwJi.png"
+      }
+    ],
+    "icon": "fa-spotify",
+    "isOpened": "false"
   },
   {
-    "name": "App One",
+    "galleryId": "2",
+    "galleryName": "App One",
     "images": [],
-    "icon": "fa-tag"
+    "icon": "fa-tag",
+    "isOpened": "false"
   },
   {
-    "name": "App Two",
+    "galleryName": "App Two",
     "images": [],
-    "icon": "fa-calendar"
+    "icon": "fa-calendar",
+    "isOpened": "false"
   },
   {
-    "name": "App Three",
+    "galleryName": "App Three",
     "images": [],
-    "icon": "fa-building"
+    "icon": "fa-building",
+    "isOpened": "false"
   },
   {
-    "name": "App Four",
+    "galleryName": "App Four",
     "images": [],
-    "icon": "fa-envelope-o"
+    "icon": "fa-envelope-o",
+    "isOpened": "false"
   }
 ]

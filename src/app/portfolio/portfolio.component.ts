@@ -10,21 +10,32 @@ import {Gallery} from "../shared/dtos/gallary";
   animations: [collapse]
 })
 export class PortfolioComponent implements OnInit {
-  showGallery: boolean;
   galleries: Array<Gallery>;
+  isOpen: boolean;
 
   constructor(private imageService: ImagesService) {
   }
+
   ngOnInit() {
-     this.imageService.getImages().subscribe(data => {
-         this.galleries = data;
-     })
+    this.imageService.getGalleries().subscribe(data => {
+      this.galleries = data;
+    });
+
+    this.imageService.openGallery.subscribe(data => {
+      if(data) {
+        this.isOpen = data.isOpen;
+      }
+    });
+
 
   }
 
-  openGallery() {
-    this.showGallery = !this.showGallery;
-    this.imageService.toggleGallery.next(this.showGallery);
+  openGallery(gallery: Gallery) {
+    let next = {
+      isOpen: this.isOpen = !this.isOpen,
+      gallery: gallery
+    };
+    this.imageService.openGallery.next(next);
   };
 
 }

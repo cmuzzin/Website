@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import each from 'lodash-es/each';
-import fromPairs from 'lodash-es/fromPairs';
 import omit from 'lodash-es/omit';
 
 @Injectable()
