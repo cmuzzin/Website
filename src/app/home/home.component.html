@@ -1,12 +1,9 @@
 <app-about-me></app-about-me>
 <section class="light-grey">
   <div class="row">
-    <div class="columns">
-      <div class="column is-one-third has-text-centered is-clipped">
-        <h2 class="title is-3">Stats</h2>
-        <i class="fa fa-keyboard-o fa-lg" aria-hidden="true"></i>
-      </div>
-      <div class="column is-one-third">
+    <h2 class="title is-2 has-text-centered">Stats</h2>
+    <div class="columns is-centered">
+      <div class="column is-5">
         <h3 class="subtitle is-4">JavaScript</h3>
         <div class="columns is-multiline">
           <div class="column is-half">
@@ -44,7 +41,7 @@
         </div>
       </div>
       <div class="is-divider-vertical"></div>
-      <div class="column is-one-quarter">
+      <div class="column is-5">
         <h3 class="subtitle is-4">CSS</h3>
         <div class="columns is-multiline">
           <div class="column is-half">
@@ -78,24 +75,34 @@
 </section>
 <section>
   <div class="row">
-    <h2 class="title is-3 has-text-centered">Experience</h2>
-    <div class="columns has-text-centered">
+    <h2 class="title is-2 has-text-centered">Experience</h2>
+    <div class="columns">
       <div class="column is-one-third">
-        <h2 class="subtitle is-4">My Spotify</h2>
-        <p class="section-body">Developed a web application that utilizes Spotify's API and demonstrates a
-          lot of functionality found on the Spotify web player using Angular and Bulma.
-        </p>
-        <a class="is-link mt-3" href="https://github.com/cmuzzin/My-Spotify">Learn more</a>
+        <h2 class="subtitle is-4">Spotify Playground</h2>
+        <article class="message is-link">
+          <div class="message-body">
+            <p class="section-body">Developed a web application that utilizes Spotify's API using Angular and Bulma and demonstrates a
+              lot of functionality found on the Spotify web player.
+            </p>
+          </div>
+        </article>
       </div>
       <div class="column is-one-third">
         <h2 class="subtitle is-4">Website</h2>
-        <p class="section-body">Build and maintain my personal website for exploring web design techniques using Angular, Bulma, and Firebase.</p>
-        <a class="is-link mt-3" href="https://github.com/cmuzzin/Portfolio">Learn more</a>
+        <article class="message is-link">
+          <div class="message-body">
+            <p class="section-body">Build and maintain my personal website for exploring web design techniques using Angular, Bulma, and Firebase.</p>
+          </div>
+        </article>
       </div>
       <div class="column is-one-third">
         <h2 class="subtitle is-4">Dillard's</h2>
-        <p class="section-body">Embedded in multiple agile teams working closely with developers, business analysts, and QA's to build
-          consistent, usable, and logical interfaces for users. Primarily spend my time building out responsive and single page applications using Angular, AngularJS, and Bootstrap. </p>
+        <article class="message is-link">
+          <div class="message-body">
+            <p class="section-body">Embedded in multiple agile teams working closely with developers, business analysts, and QA's to build
+              consistent, usable, and logical interfaces for users. Primarily spend my time building out responsive and single page applications using Angular, AngularJS, and Bootstrap. </p>
+          </div>
+        </article>
       </div>
     </div>
   </div>
@@ -103,10 +110,10 @@
 <section class="light-grey contact">
   <div class="row">
     <div class="container">
-      <h2 class="title is-3 has-text-centered">Contact</h2>
+      <h2 class="title is-2 has-text-centered">Contact</h2>
       <div class="columns">
         <div class="column">
-          <form [formGroup]="form" (ngSubmit)="onSubmit()" style="padding-bottom: 10px">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="field is-horizontal">
               <div class="field-body">
                 <div class="field">

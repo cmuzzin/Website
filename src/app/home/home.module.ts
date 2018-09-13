@@ -11,6 +11,6 @@ import {CommonModule} from "@angular/common";
     ReactiveFormsModule
   ],
   declarations: [HomeComponent, AboutMeComponent],
-  exports: [ FormsModule, ReactiveFormsModule]
+  exports: []
 })
 export class HomeModule { }

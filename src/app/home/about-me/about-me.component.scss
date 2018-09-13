@@ -1,3 +1,13 @@
 img{
-  width: 70%;
+  width: 50%;
+}
+
+.icon-wrapper {
+  height: 130px;
+  i{
+    vertical-align: middle;
+  }
+  &:hover {
+    background-color: rgba(0,0,0,.07);
+  }
 }
