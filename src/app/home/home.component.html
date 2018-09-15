@@ -1,10 +1,10 @@
 <app-about-me></app-about-me>
-<section class="light-grey">
-  <div class="row">
-    <h2 class="title is-2 has-text-centered">Stats</h2>
+<section class="light-grey has-text-centered">
+  <div class="container">
+    <h2 class="title is-spaced is-size-3-desktop is-size-4-mobile">Skills</h2>
     <div class="columns is-centered">
-      <div class="column is-5">
-        <h3 class="subtitle is-4">JavaScript</h3>
+      <div class="column is-half">
+        <h3 class="subtitle is-size-5-desktop">JavaScript</h3>
         <div class="columns is-multiline">
           <div class="column is-half">
             <label class="label">Angular</label>
@@ -41,8 +41,8 @@
         </div>
       </div>
       <div class="is-divider-vertical"></div>
-      <div class="column is-5">
-        <h3 class="subtitle is-4">CSS</h3>
+      <div class="column is-half">
+        <h3 class="subtitle is-size-5-desktop">CSS</h3>
         <div class="columns is-multiline">
           <div class="column is-half">
             <label class="label">CSS</label>
@@ -73,89 +73,92 @@
     </div>
   </div>
 </section>
-<section>
-  <div class="row">
-    <h2 class="title is-2 has-text-centered">Experience</h2>
-    <div class="columns">
+<section class="has-text-centered">
+  <div class="container">
+    <h2 class="title is-spaced is-size-3-desktop is-size-4-mobile">Experience</h2>
+    <div class="columns is-centered">
       <div class="column is-one-third">
-        <h2 class="subtitle is-4">Spotify Playground</h2>
+        <h2 class="subtitle is-size-5-desktop">Spotify Playground</h2>
         <article class="message is-link">
           <div class="message-body">
-            <p class="section-body">Developed a web application that utilizes Spotify's API using Angular and Bulma and demonstrates a
+            <p>Developed a web application that utilizes Spotify's API using Angular and Bulma and
+              demonstrates a
               lot of functionality found on the Spotify web player.
             </p>
           </div>
         </article>
       </div>
       <div class="column is-one-third">
-        <h2 class="subtitle is-4">Website</h2>
+        <h2 class="subtitle is-size-5-desktop">Website</h2>
         <article class="message is-link">
           <div class="message-body">
-            <p class="section-body">Build and maintain my personal website for exploring web design techniques using Angular, Bulma, and Firebase.</p>
+            <p>Build and maintain my personal website for exploring web design techniques using
+              Angular, Bulma, and Firebase.</p>
           </div>
         </article>
       </div>
       <div class="column is-one-third">
-        <h2 class="subtitle is-4">Dillard's</h2>
+        <h2 class="subtitle is-size-5-desktop">Dillard's</h2>
         <article class="message is-link">
           <div class="message-body">
-            <p class="section-body">Embedded in multiple agile teams working closely with developers, business analysts, and QA's to build
-              consistent, usable, and logical interfaces for users. Primarily spend my time building out responsive and single page applications using Angular, AngularJS, and Bootstrap. </p>
+            <p>Embedded in multiple agile teams working closely with developers, business analysts,
+              and QA's to build
+              consistent, usable, and logical interfaces for users. Primarily spend my time building out responsive and
+              single page applications using Angular, AngularJS, and Bootstrap. </p>
           </div>
         </article>
       </div>
     </div>
   </div>
 </section>
-<section class="light-grey contact">
-  <div class="row">
-    <div class="container">
-      <h2 class="title is-2 has-text-centered">Contact</h2>
-      <div class="columns">
-        <div class="column">
-          <form [formGroup]="form" (ngSubmit)="onSubmit()">
-            <div class="field is-horizontal">
-              <div class="field-body">
-                <div class="field">
-                  <p class="control is-expanded has-icons-left">
-                    <input class="input" type="text" placeholder="Name" name="name" id="name" formControlName="name"
-                           [ngClass]="{'is-danger': formErrors.name}">
-                    <span class="icon is-small is-left">
+<section class="light-grey contact has-text-centered">
+  <div class="container">
+    <h2 class="title is-spaced is-size-3-desktop is-size-4-mobile">Contact</h2>
+    <div class="columns is-centered">
+      <div class="column">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input class="input" type="text" placeholder="Name" name="name" id="name" formControlName="name"
+                         [ngClass]="{'is-danger': formErrors.name}">
+                  <span class="icon is-small is-left">
           <i class="fa fa-user"></i>
         </span>
-                  </p>
-                  <p class="help is-danger is-small">{{formErrors.name}}</p>
-                </div>
-                <div class="field">
-                  <p class="control is-expanded has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Email" name="email" id="email"
-                           formControlName="email"
-                           [ngClass]="{'is-danger': formErrors.email}">
-                    <span class="icon is-small is-left">
+                </p>
+                <p class="help is-danger is-small">{{formErrors.name}}</p>
+              </div>
+              <div class="field">
+                <p class="control is-expanded has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Email" name="email" id="email"
+                         formControlName="email"
+                         [ngClass]="{'is-danger': formErrors.email}">
+                  <span class="icon is-small is-left">
           <i class="fa fa-envelope"></i>
         </span>
-                  </p>
-                  <p class="help is-danger is-small">{{formErrors.email}}</p>
-                </div>
+                </p>
+                <p class="help is-danger is-small">{{formErrors.email}}</p>
               </div>
             </div>
-            <div class="field is-horizontal">
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <input class="input" type="text" placeholder="Subject" name="subject" id="subject"
-                           formControlName="subject"
-                           [ngClass]="{'is-danger': formErrors.subject}">
-                  </div>
-                  <p class="help is-danger is-small">{{formErrors.subject}}</p>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" placeholder="Subject" name="subject" id="subject"
+                         formControlName="subject"
+                         [ngClass]="{'is-danger': formErrors.subject}">
                 </div>
+                <p class="help is-danger is-small">{{formErrors.subject}}</p>
               </div>
             </div>
+          </div>
 
-            <div class="field is-horizontal">
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
                             <textarea class="textarea"
                                       placeholder="Leave a me a message"
                                       name="message"
@@ -165,24 +168,23 @@
                                       [ngClass]="{'is-danger': formErrors.message}">
 
                             </textarea>
-                  </div>
-                  <p class="help is-danger is-small">{{formErrors.message}}</p>
+                </div>
+                <p class="help is-danger is-small">{{formErrors.message}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <button type="submit" class="button is-link is-pulled-right" [disabled]="form.invalid">
+                    Send message
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="field is-horizontal">
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <button type="submit" class="button is-link is-pulled-right" [disabled]="form.invalid">
-                      Send message
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
