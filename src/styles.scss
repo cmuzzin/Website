@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "variables";
-@import "../node_modules/bulma/bulma";
-@import "../node_modules/bulma-divider/dist/css/bulma-divider";
-@import "../node_modules/bulma-carousel/dist/css/bulma-carousel";
-@import "../node_modules/font-awesome/css/font-awesome.css";
+@import "~bulma/bulma";
+@import "~bulma-divider/dist/css/bulma-divider";
+@import "~font-awesome/css/font-awesome.css";
 @import "app/scss/utilities";
 
 

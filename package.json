@@ -25,7 +25,6 @@
     "@types/lodash": "^4.14.106",
     "angularfire2": "^5.0.0-rc.3",
     "bulma": "^0.7.1",
-    "bulma-carousel": "^3.0.0",
     "bulma-divider": "^2.0.1",
     "core-js": "^2.5.5",
     "firebase": "^4.7.0",
