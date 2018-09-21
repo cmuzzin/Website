@@ -1,15 +1,14 @@
-import {Component, OnInit} from '@angular/core';
-import {ImagesService} from "../shared/services/image.service";
-import {collapse} from "../shared/animations/animations";
-import {Gallery} from "../shared/dtos/gallary";
+import { Component, OnInit } from '@angular/core';
+import {ImagesService} from "../../shared/services/image.service";
+import {Gallery} from "../../shared/dtos/gallary";
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss'],
-  animations: [collapse]
+  selector: 'app-recent-work',
+  templateUrl: './recent-work.component.html',
+  styleUrls: ['./recent-work.component.scss']
 })
-export class PortfolioComponent implements OnInit {
+export class RecentWorkComponent implements OnInit {
+
   galleries: Array<Gallery>;
   isOpen: boolean;
 
@@ -26,7 +25,6 @@ export class PortfolioComponent implements OnInit {
         this.isOpen = data.isOpen;
       }
     });
-
 
   }
 

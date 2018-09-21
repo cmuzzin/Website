@@ -28,14 +28,22 @@ $red:          hsl(348, 100%, 61%) !default
 
 
 // custom
-$main: #212c39;
-$main-invert: findColorInvert($main);
-$purple: hsl(275,87%,45%);
-$purple-invert: findColorInvert($purple);
+$dark-blue: #004369;
+$dark-blue-invert: findColorInvert($dark-blue);
+$alt-purple: hsl(275,87%,45%);
+$alt-purple-invert: findColorInvert($alt-purple);
+$section-grey: #f4f7fa;
+$section-grey-invert: findColorInvert(#f4f7fa);
+$input-focus-border-color: $alt-purple;
+$input-focus-border-color: $alt-purple;
+$input-focus-box-shadow-color: rgba($alt-purple, 0.25);
+
+
 
 $addColors: (
-  "purple":($purple, $purple-invert),
-  "main": ($main, $main-invert)
+  "alt-purple":($alt-purple, $alt-purple-invert),
+  "dark-blue": ($dark-blue, $dark-blue-invert),
+  "section-grey": ($section-grey, $section-grey-invert)
 );
 $colors: map-merge($colors, $addColors);
 

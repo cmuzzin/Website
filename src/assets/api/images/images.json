@@ -2,42 +2,26 @@
   {
     "galleryId": "1",
     "galleryName": "Spotify Playground",
-    "images": [
-      {
-        "imageId": "1",
-        "imageUrl": "https://i.imgur.com/IU0YMLa.png?1"
-      },
-      {
-        "imageId": "2",
-        "imageUrl": "https://i.imgur.com/oT0hwJi.png"
-      }
-    ],
-    "icon": "fa-spotify",
-    "isOpened": "false"
-  },
-  {
-    "galleryId": "2",
-    "galleryName": "App One",
     "images": [],
-    "icon": "fa-tag",
+    "icon": "fab fa-spotify",
     "isOpened": "false"
   },
   {
     "galleryName": "App Two",
     "images": [],
-    "icon": "fa-calendar",
+    "icon": "far fa-calendar-alt",
     "isOpened": "false"
   },
   {
     "galleryName": "App Three",
     "images": [],
-    "icon": "fa-building",
+    "icon": "far fa-building",
     "isOpened": "false"
   },
   {
-    "galleryName": "App Four",
+    "galleryName": "App Three",
     "images": [],
-    "icon": "fa-envelope-o",
+    "icon": "fab fa-angular",
     "isOpened": "false"
   }
 ]

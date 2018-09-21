@@ -9,12 +9,11 @@ import {environment} from "../environments/environment";
 import {SharedModule} from "./shared/shared.module";
 import {HomeModule} from "./home/home.module";
 import {HttpClientModule} from "@angular/common/http";
-import {PortfolioComponent} from "./portfolio/portfolio.component";
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PortfolioComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +21,7 @@ import {PortfolioComponent} from "./portfolio/portfolio.component";
     HttpClientModule,
     SharedModule.forRoot(),
     ToastrModule.forRoot(),
+    AppRoutingModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
     HomeModule

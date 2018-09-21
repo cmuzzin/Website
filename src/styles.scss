@@ -2,21 +2,16 @@
 @import "variables";
 @import "~bulma/bulma";
 @import "~bulma-divider/dist/css/bulma-divider";
-@import "~font-awesome/css/font-awesome.css";
-@import "app/scss/utilities";
-
-
-.light-grey {
-  background-color: #f6f6f6;
-
-}
+$fa-font-path: '../node_modules/@fortawesome/fontawesome-free-webfonts/webfonts';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fa-solid';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fa-regular';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fa-brands';
+@import "scss/utilities";
 
 section {
   border-bottom: 1px solid #f1f1f1;
   padding: 65px 0;
-  .row {
-    margin: 30px;
-  }
 }
 
 footer .footer-icons a.button {
@@ -29,7 +24,7 @@ footer .footer-icons a.button {
   border: 2px solid rgba(255, 255, 255, 0.3);
   &:hover {
   background: #fff;
-  color: $main;
+  color: $dark-blue;
   border: 2px solid #fff;
 }
 }

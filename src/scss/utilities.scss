@@ -8,3 +8,9 @@
 ul {
   list-style-type: none !important;
 }
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
