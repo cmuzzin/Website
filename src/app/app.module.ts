@@ -18,7 +18,6 @@ import {AppRoutingModule} from "./app-routing.module";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule,
     SharedModule.forRoot(),
     ToastrModule.forRoot(),
     AppRoutingModule,
