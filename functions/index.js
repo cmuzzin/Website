@@ -16,7 +16,7 @@ exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onWri
     return;
   }
 
-  const val = change.after.data.val();
+  const val = change.after.val();
 
   const mailOptions = {
     to: 'chrismuzzin1020@gmail.com',
