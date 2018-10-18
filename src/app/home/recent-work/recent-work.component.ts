@@ -10,7 +10,6 @@ import {Gallery} from "../../shared/dtos/gallary";
 export class RecentWorkComponent implements OnInit {
 
   galleries: Array<Gallery>;
-  isOpen: boolean;
 
   constructor(private imageService: ImagesService) {
   }
@@ -20,20 +19,10 @@ export class RecentWorkComponent implements OnInit {
       this.galleries = data;
     });
 
-    this.imageService.openGallery.subscribe(data => {
-      if(data) {
-        this.isOpen = data.isOpen;
-      }
-    });
-
   }
 
-  openGallery(gallery: Gallery) {
-    let next = {
-      isOpen: this.isOpen = !this.isOpen,
-      gallery: gallery
-    };
-    this.imageService.openGallery.next(next);
+  toGallery(gallery: Gallery) {
+
   };
 
 }

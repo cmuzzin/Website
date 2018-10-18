@@ -5,7 +5,7 @@ import omit from 'lodash-es/omit';
 
 @Injectable()
 
-export class CustomValidatorsService {
+export class FormValidatorService {
   form: FormGroup;
 
 
@@ -43,14 +43,14 @@ export class CustomValidatorsService {
 
   private updateErrorMessages() {
     const form = this.form;
-    each(omit(CustomValidatorsService.formErrors, ''), (msg, field) => {
-      CustomValidatorsService.formErrors[field] = '';
+    each(omit(FormValidatorService.formErrors, ''), (msg, field) => {
+      FormValidatorService.formErrors[field] = '';
       const control = form.get(field);
 
       if (control && control.dirty && !control.valid) {
-        const messages = CustomValidatorsService.validationMessages[field];
+        const messages = FormValidatorService.validationMessages[field];
         each(control.errors, (val2, key) => {
-          CustomValidatorsService.formErrors[field] = messages[key];
+          FormValidatorService.formErrors[field] = messages[key];
         });
       }
     });

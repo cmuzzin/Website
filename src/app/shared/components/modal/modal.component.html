@@ -1,9 +1,6 @@
-<div class="modal is-fullwidth" [ngClass]="{'is-active': isOpen}" *ngIf="gallery">
+<div class="modal is-fullwidth" [ngClass]="{'is-active': toggle}">
   <div class="modal-background"></div>
   <div class="modal-content">
-    <app-carousel [images]="gallery.images"></app-carousel>
-    <button class="button is-primary is-outlined mt-2 is-pulled-right">Next</button>
-    <button class="button is-primary is-outlined mt-2">Previous</button>
   </div>
   <button class="modal-close is-large" aria-label="close" (click)="close()"></button>
 </div>

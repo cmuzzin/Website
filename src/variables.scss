@@ -34,9 +34,9 @@ $alt-purple: hsl(275,87%,45%);
 $alt-purple-invert: findColorInvert($alt-purple);
 $section-grey: #f4f7fa;
 $section-grey-invert: findColorInvert(#f4f7fa);
-$input-focus-border-color: $alt-purple;
-$input-focus-border-color: $alt-purple;
-$input-focus-box-shadow-color: rgba($alt-purple, 0.25);
+$input-focus-border-color: $link;
+$input-focus-border-color: $link;
+$input-focus-box-shadow-color: rgba($link, 0.25);
 
 
 
