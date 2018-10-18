@@ -1,5 +1,4 @@
 import {Injectable} from '@angular/core';
-import {BehaviorSubject} from "rxjs/BehaviorSubject";
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {Observable} from 'rxjs/Rx';
 import {Gallery} from "../dtos/gallary";
@@ -7,7 +6,6 @@ import {Gallery} from "../dtos/gallary";
 @Injectable()
 export class ImagesService {
   private imageUrl = 'assets/api/images/images.json';
-  openGallery: BehaviorSubject<any> = new BehaviorSubject<any>(null);
 
   constructor(private http: HttpClient) {
   }

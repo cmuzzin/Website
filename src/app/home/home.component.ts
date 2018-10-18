@@ -1,10 +1,8 @@
-///<reference path="../../../node_modules/@angular/core/src/metadata/directives.d.ts"/>
 import { Component, OnInit } from '@angular/core';
 import {FormGroup} from "@angular/forms";
-import {CustomValidatorsService} from "../shared/services/custom-validators.service";
+import {FormValidatorService} from "../shared/services/form-validator.service";
 import {ToastrService} from "ngx-toastr";
 import {AngularFireDatabase} from "angularfire2/database";
-import * as firebase from "firebase";
 
 @Component({
   selector: 'app-home',
@@ -13,11 +11,10 @@ import * as firebase from "firebase";
 })
 export class HomeComponent implements OnInit {
   form: FormGroup;
-  formErrors = CustomValidatorsService.formErrors;
-  image: string;
+  formErrors = FormValidatorService.formErrors;
 
   constructor(private db: AngularFireDatabase,
-              private customValidatorService: CustomValidatorsService,
+              private customValidatorService: FormValidatorService,
               private toastr: ToastrService) {
     this.form = this.customValidatorService.form;
   }

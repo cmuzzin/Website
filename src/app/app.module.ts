@@ -8,7 +8,6 @@ import {AngularFireModule} from "angularfire2";
 import {environment} from "../environments/environment";
 import {SharedModule} from "./shared/shared.module";
 import {HomeModule} from "./home/home.module";
-import {HttpClientModule} from "@angular/common/http";
 import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
@@ -20,10 +19,10 @@ import {AppRoutingModule} from "./app-routing.module";
     BrowserAnimationsModule,
     SharedModule.forRoot(),
     ToastrModule.forRoot(),
-    AppRoutingModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
-    HomeModule
+    HomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
