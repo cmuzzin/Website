@@ -6,9 +6,10 @@ const admin = require('firebase-admin');
 admin.initializeApp(functions.config().firebase);
 const nodemailer = require('nodemailer');
 
-const gmailEmail = encodeURIComponent(functions.config().gmail.email);
-const gmailPassword = encodeURIComponent(functions.config().gmail.password);
+const gmailEmail = encodeURIComponent(functions.config().gmail.user);
+const gmailPassword = encodeURIComponent(functions.config().gmail.pass);
 const mailTransport = nodemailer.createTransport(`smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`);
+
 
 exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onWrite(event => {
   const snapshot = event.data;
