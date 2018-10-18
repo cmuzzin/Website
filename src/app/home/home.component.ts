@@ -10,13 +10,12 @@ import {AngularFireDatabase} from "angularfire2/database";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  form: FormGroup;
+  form: FormGroup = this.customValidatorService.form;
   formErrors = FormValidatorService.formErrors;
 
   constructor(private db: AngularFireDatabase,
               private customValidatorService: FormValidatorService,
               private toastr: ToastrService) {
-    this.form = this.customValidatorService.form;
   }
 
   ngOnInit() {

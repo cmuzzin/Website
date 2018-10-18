@@ -1,15 +1,13 @@
-
+import {Image} from "./image";
 export class Gallery {
-  galleryId: number;
-  galleryName: string;
-  images: Array<any>;
+  id: number;
+  name: string;
+  images: Array<Image>;
   icon: string;
-  isOpened: boolean;
   constructor(data) {
-    this.galleryId = data.galleryId;
-    this.galleryName = data.galleryName;
+    this.id = data.id;
+    this.name = data.name;
     this.images = data.images;
     this.icon = data.icon;
-    this.isOpened = data.isOpened === "true";
   }
 }

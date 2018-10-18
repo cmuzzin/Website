@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Spotify Playground",
+    "images": [],
+    "icon": "fab fa-spotify"
+  },
+  {
+    "name": "App Two",
+    "images": [],
+    "icon": "far fa-calendar-alt"
+  },
+  {
+    "name": "App Three",
+    "images": [],
+    "icon": "far fa-building"
+  },
+  {
+    "name": "App Three",
+    "images": [],
+    "icon": "fab fa-angular"
+  }
+]

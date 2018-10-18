@@ -12,14 +12,14 @@ export class ImagesService {
 
   getGalleries() {
     return this.http.get(this.imageUrl)
-      .map((data: Array<Gallery>) => data.map(val => new Gallery(val)))
+      .map((data: Array<Gallery>) => data.map(item => new Gallery(item)))
       .catch(this.handleError)
   };
 
   getGallery(id: number) {
      return this.http.get(this.imageUrl)
        .map((data: Array<Gallery>) => {
-         const gallery = data.find(val => val.galleryId === id);
+         const gallery = data.find(item => item.id === id);
          return new Gallery(gallery);
        })
        .catch(this.handleError)
