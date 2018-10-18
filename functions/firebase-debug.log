@@ -1,0 +1,170 @@
+[debug] [2018-10-18T21:00:53.730Z] ----------------------------------------------------------------------
+[debug] [2018-10-18T21:00:53.732Z] Command:       /usr/local/bin/node /Users/muzzicm/.npm-global/bin/firebase deploy --only functions
+[debug] [2018-10-18T21:00:53.732Z] CLI Version:   3.18.4
+[debug] [2018-10-18T21:00:53.732Z] Platform:      darwin
+[debug] [2018-10-18T21:00:53.732Z] Node Version:  v10.1.0
+[debug] [2018-10-18T21:00:53.733Z] Time:          Thu Oct 18 2018 16:00:53 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:53.733Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-18T21:00:53.745Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-18T21:00:53.746Z] > authorizing via signed-in user
+[debug] [2018-10-18T21:00:53.748Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/website-86266  
+  
+ Thu Oct 18 2018 16:00:53 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:54.091Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:00:54.092Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/website-86266/tokens  
+  
+ Thu Oct 18 2018 16:00:54 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:54.317Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'website-86266'...
+[info] 
+[info] i  deploying functions
+[debug] [2018-10-18T21:00:56.199Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "^6.0.0",
+    "firebase-functions": "^2.0.5",
+    "nodemailer": "^4.4.2"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-10-18T21:00:56.200Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/website-86266?view=CONSUMER_VIEW  
+  
+ Thu Oct 18 2018 16:00:56 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:56.200Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/website-86266?view=CONSUMER_VIEW  
+  
+ Thu Oct 18 2018 16:00:56 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:56.979Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:00:57.083Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2018-10-18T21:00:57.084Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/website-86266  
+  
+ Thu Oct 18 2018 16:00:57 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:57.308Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:00:57.308Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/670442237891:getServerAppConfig  
+  
+ Thu Oct 18 2018 16:00:57 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:57.481Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-10-18T21:00:57.482Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/website-86266/configs  
+  
+ Thu Oct 18 2018 16:00:57 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:58.000Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:00:58.001Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/website-86266/configs/gmail/variables  
+  
+ Thu Oct 18 2018 16:00:58 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:58.512Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:00:58.513Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/website-86266/configs/gmail/variables/user  
+  
+ Thu Oct 18 2018 16:00:58 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:58.513Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/website-86266/configs/gmail/variables/email  
+  
+ Thu Oct 18 2018 16:00:58 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:58.513Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/website-86266/configs/gmail/variables/pass  
+  
+ Thu Oct 18 2018 16:00:58 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:58.513Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/website-86266/configs/gmail/variables/password  
+  
+ Thu Oct 18 2018 16:00:58 GMT-0500 (CDT)
+[debug] [2018-10-18T21:00:58.681Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:00:59.129Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:00:59.130Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:00:59.946Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (40.88 KB) for uploading
+[debug] [2018-10-18T21:01:00.200Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/website-86266/locations/us-central1/functions:generateUploadUrl  
+  
+ Thu Oct 18 2018 16:01:00 GMT-0500 (CDT)
+[debug] [2018-10-18T21:01:00.665Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:01:00.665Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-8f83b3de-7d53-41a0-8b33-4a1a0cdada4c/3f5a4ff9-dc8b-48ff-8cd5-ce254ae06011.zip?GoogleAccessId=service-670442237891@gcf-admin-robot.iam.gserviceaccount.com&Expires=1539898259&Signature=EISeMlFn3%2FulR%2B58o8MO4Bazt5lqxRJt24Nl7NriFs6M7ApCoJIdhFN%2B3taT%2FgfmiZ0h7yrMlAOabzW2h0kYUt%2BS%2BWAQcyJH%2F8wadm4DecYUuFyH9crWx3NugAsNnWjphiOwh6442ru7Jsa4IRKXWY4%2FD4CfctV2a33Fsh2VeJ3sK923Rg1bD26H7l25TTRCwJZHEmni%2FYn%2F%2BSAMg5UBdPieAi8kxIQT85dSHvxpYYZbNlF4zi5B%2BKovJpR3lqSHCzRfP1EB1wSVKNwLoc4X3eT7UhFdJgIiDXRGZEXVNtILlSeTL4j3q1dRDPCyQ5Y7p12sLVI%2FvqEd%2FBWSYf2U0Q%3D%3D  
+ ReadStream {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { length: 1 },
+     length: 41865,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: true,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     emitClose: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: '/var/folders/8k/_5y1vn_151j_87skv3p1kvpx298qr7/T/firebase-functions-18166hEzrXqXBvN6i.zip',
+  fd: 19,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 41865,
+  closed: false } 
+ Thu Oct 18 2018 16:01:00 GMT-0500 (CDT)
+[debug] [2018-10-18T21:01:01.074Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: functions folder uploaded successfully
+[debug] [2018-10-18T21:01:01.075Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/website-86266/locations/us-central1/functions  
+  
+ Thu Oct 18 2018 16:01:01 GMT-0500 (CDT)
+[debug] [2018-10-18T21:01:01.273Z] <<< HTTP RESPONSE 200
+[info] i  functions: updating function sendContactMessage...
+[debug] [2018-10-18T21:01:01.275Z] Trigger is:  {"eventTrigger":{"resource":"projects/_/instances/website-86266/refs/messages/{pushKey}","eventType":"providers/google.firebase.database/eventTypes/ref.write","service":"firebaseio.com"}}
+[info] i  functions: updating function addMessage...
+[debug] [2018-10-18T21:01:01.276Z] Trigger is:  {"httpsTrigger":{}}
+[debug] [2018-10-18T21:01:01.277Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/website-86266/locations/us-central1/functions/sendContactMessage 
+query params: {"updateMask":"sourceUploadUrl,name,labels,eventTrigger.resource,eventTrigger.eventType,eventTrigger.service"} 
+ { sourceUploadUrl: 'https://storage.googleapis.com/gcf-upload-us-central1-8f83b3de-7d53-41a0-8b33-4a1a0cdada4c/3f5a4ff9-dc8b-48ff-8cd5-ce254ae06011.zip?GoogleAccessId=service-670442237891@gcf-admin-robot.iam.gserviceaccount.com&Expires=1539898259&Signature=EISeMlFn3%2FulR%2B58o8MO4Bazt5lqxRJt24Nl7NriFs6M7ApCoJIdhFN%2B3taT%2FgfmiZ0h7yrMlAOabzW2h0kYUt%2BS%2BWAQcyJH%2F8wadm4DecYUuFyH9crWx3NugAsNnWjphiOwh6442ru7Jsa4IRKXWY4%2FD4CfctV2a33Fsh2VeJ3sK923Rg1bD26H7l25TTRCwJZHEmni%2FYn%2F%2BSAMg5UBdPieAi8kxIQT85dSHvxpYYZbNlF4zi5B%2BKovJpR3lqSHCzRfP1EB1wSVKNwLoc4X3eT7UhFdJgIiDXRGZEXVNtILlSeTL4j3q1dRDPCyQ5Y7p12sLVI%2FvqEd%2FBWSYf2U0Q%3D%3D',
+  name: 'projects/website-86266/locations/us-central1/functions/sendContactMessage',
+  labels: { 'deployment-tool': 'cli-firebase' },
+  eventTrigger: 
+   { resource: 'projects/_/instances/website-86266/refs/messages/{pushKey}',
+     eventType: 'providers/google.firebase.database/eventTypes/ref.write',
+     service: 'firebaseio.com' } } 
+ Thu Oct 18 2018 16:01:01 GMT-0500 (CDT)
+[debug] [2018-10-18T21:01:01.279Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/website-86266/locations/us-central1/functions/addMessage 
+query params: {"updateMask":"sourceUploadUrl,name,labels,httpsTrigger"} 
+ { sourceUploadUrl: 'https://storage.googleapis.com/gcf-upload-us-central1-8f83b3de-7d53-41a0-8b33-4a1a0cdada4c/3f5a4ff9-dc8b-48ff-8cd5-ce254ae06011.zip?GoogleAccessId=service-670442237891@gcf-admin-robot.iam.gserviceaccount.com&Expires=1539898259&Signature=EISeMlFn3%2FulR%2B58o8MO4Bazt5lqxRJt24Nl7NriFs6M7ApCoJIdhFN%2B3taT%2FgfmiZ0h7yrMlAOabzW2h0kYUt%2BS%2BWAQcyJH%2F8wadm4DecYUuFyH9crWx3NugAsNnWjphiOwh6442ru7Jsa4IRKXWY4%2FD4CfctV2a33Fsh2VeJ3sK923Rg1bD26H7l25TTRCwJZHEmni%2FYn%2F%2BSAMg5UBdPieAi8kxIQT85dSHvxpYYZbNlF4zi5B%2BKovJpR3lqSHCzRfP1EB1wSVKNwLoc4X3eT7UhFdJgIiDXRGZEXVNtILlSeTL4j3q1dRDPCyQ5Y7p12sLVI%2FvqEd%2FBWSYf2U0Q%3D%3D',
+  name: 'projects/website-86266/locations/us-central1/functions/addMessage',
+  labels: { 'deployment-tool': 'cli-firebase' },
+  httpsTrigger: {} } 
+ Thu Oct 18 2018 16:01:01 GMT-0500 (CDT)
+[debug] [2018-10-18T21:01:01.687Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:01:01.688Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:01:01.690Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/website-86266/locations/us-central1/functions  
+  
+ Thu Oct 18 2018 16:01:01 GMT-0500 (CDT)
+[debug] [2018-10-18T21:01:01.879Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:01:01.880Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9zZW5kQ29udGFjdE1lc3NhZ2UvUVhaMk5FNzFYaFU  
+  
+ Thu Oct 18 2018 16:01:01 GMT-0500 (CDT)
+[debug] [2018-10-18T21:01:01.881Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/d2Vic2l0ZS04NjI2Ni91cy1jZW50cmFsMS9hZGRNZXNzYWdlL1k1VUd6S2dTcV9v  
+  
+ Thu Oct 18 2018 16:01:01 GMT-0500 (CDT)
+[debug] [2018-10-18T21:01:02.005Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-18T21:01:02.071Z] <<< HTTP RESPONSE 200
