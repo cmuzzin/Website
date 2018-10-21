@@ -6,16 +6,19 @@
     "icon": "fab fa-spotify"
   },
   {
+    "id": "2",
     "name": "App Two",
     "images": [],
     "icon": "far fa-calendar-alt"
   },
   {
+    "id": "3",
     "name": "App Three",
     "images": [],
     "icon": "far fa-building"
   },
   {
+    "id": "4",
     "name": "App Three",
     "images": [],
     "icon": "fab fa-angular"

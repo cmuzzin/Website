@@ -8,21 +8,21 @@ import {AngularFireModule} from "angularfire2";
 import {environment} from "../environments/environment";
 import {SharedModule} from "./shared/shared.module";
 import {HomeModule} from "./home/home.module";
-import {AppRoutingModule} from "./app-routing.module";
+import { GalleryComponent } from './home/gallery/gallery.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    SharedModule.forRoot(),
     ToastrModule.forRoot(),
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
     HomeModule,
-    AppRoutingModule
+    SharedModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

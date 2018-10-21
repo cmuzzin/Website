@@ -8,17 +8,28 @@ import {ModalComponent} from './components/modal/modal.component';
 import {CommonModule} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {AppRoutingModule} from "../app-routing.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   declarations: [FooterComponent, HeroComponent, NavComponent, ModalComponent],
   entryComponents: [],
-  exports: [CommonModule, FormsModule, ReactiveFormsModule, HttpClientModule, FooterComponent, HeroComponent, NavComponent, ModalComponent],
+  exports: [
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FooterComponent,
+    HeroComponent,
+    NavComponent,
+    ModalComponent],
 })
 export class SharedModule {
   static forRoot(): ModuleWithProviders {
