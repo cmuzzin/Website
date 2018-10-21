@@ -8,7 +8,7 @@ import {AngularFireModule} from "angularfire2";
 import {environment} from "../environments/environment";
 import {SharedModule} from "./shared/shared.module";
 import {HomeModule} from "./home/home.module";
-import { GalleryComponent } from './home/gallery/gallery.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
