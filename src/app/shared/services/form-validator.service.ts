@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import each from 'lodash-es/each';
 import omit from 'lodash-es/omit';
+import { debounceTime, map } from 'rxjs/operators';
 
 @Injectable()
 
 export class FormValidatorService {
   form: FormGroup;
-
 
   static formErrors = {
     'name': '',
@@ -38,7 +38,9 @@ export class FormValidatorService {
       subject: ['', Validators.required],
       message: ['', [Validators.required, Validators.maxLength(250)]]
     });
-    this.form.valueChanges.debounceTime(500).subscribe(() => this.updateErrorMessages());
+    this.form.valueChanges.pipe(
+      debounceTime(500)
+    ).subscribe(() => this.updateErrorMessages());
   };
 
   private updateErrorMessages() {

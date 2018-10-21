@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
-import {Observable} from 'rxjs/Rx';
+import {throwError} from 'rxjs';
+import {map, catchError} from 'rxjs/operators';
 import {Gallery} from "../dtos/gallary";
 
 @Injectable()
@@ -11,18 +12,18 @@ export class ImagesService {
   }
 
   getGalleries() {
-    return this.http.get(this.imageUrl)
-      .map((data: Array<Gallery>) => data.map(item => new Gallery(item)))
-      .catch(this.handleError)
+    return this.http.get(this.imageUrl).pipe(
+      map((data: any) => data.map(item => new Gallery(item))),
+      catchError(this.handleError))
   };
 
-  getGallery(id: number) {
-     return this.http.get(this.imageUrl)
-       .map((data: Array<Gallery>) => {
-         const gallery = data.find(item => item.id === id);
-         return new Gallery(gallery);
-       })
-       .catch(this.handleError)
+  getGallery(id) {
+    return this.http.get(this.imageUrl).pipe(
+      map((data : any) => {
+        const gallery = data.find(item => item.id === id);
+        return new Gallery(gallery);
+      }),
+      catchError(this.handleError));
   };
 
   private handleError(err: HttpErrorResponse) {
@@ -32,7 +33,7 @@ export class ImagesService {
     } else {
       errorMessage = `Server returned code: ${err.status}, error message is: ${err.message}`;
     }
-    return Observable.throw(errorMessage);
+    return throwError(errorMessage);
   }
 
 }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormGroup} from "@angular/forms";
 import {FormValidatorService} from "../shared/services/form-validator.service";
 import {ToastrService} from "ngx-toastr";
-import {AngularFireDatabase} from "angularfire2/database";
+import {AngularFireDatabase} from "@angular/fire/database";
 
 @Component({
   selector: 'app-home',
