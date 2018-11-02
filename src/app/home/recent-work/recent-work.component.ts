@@ -16,10 +16,8 @@ export class RecentWorkComponent implements OnInit {
 
   ngOnInit() {
     this.imageService.getGalleries().subscribe(data => {
-      console.log(data);
       this.galleries = data;
     });
-
   }
 
 }

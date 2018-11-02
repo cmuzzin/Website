@@ -7,7 +7,7 @@ export class Gallery {
   constructor(data) {
     this.id = data.id;
     this.name = data.name;
-    this.images = data.images;
+    this.images = data.images.map(image => new Image(image));
     this.icon = data.icon;
   }
 }

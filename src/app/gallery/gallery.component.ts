@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import {ImagesService} from "../shared/services/image.service";
+import { Gallery } from '../shared/dtos/gallary';
 
 @Component({
   selector: 'app-gallery',
@@ -7,12 +9,19 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
-
-  constructor(private ar: ActivatedRoute) { }
+  gallery: Gallery;
+  constructor(private ar: ActivatedRoute, private imagesService: ImagesService) { }
 
   ngOnInit() {
-    const ss = this.ar.snapshot;
-    console.log(ss);
+    const id = this.ar.snapshot.params.id;
+    this.imagesService.getGallery(id).subscribe(
+      data => {
+        this.gallery = data;
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
 
 }
