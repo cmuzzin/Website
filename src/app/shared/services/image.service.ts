@@ -20,8 +20,8 @@ export class ImagesService {
   getGallery(id) {
     return this.http.get(this.imageUrl).pipe(
       map((data : any) => {
-        const gallery = data.find(item => item.id === id);
-        return new Gallery(gallery);
+        const gallery = new Gallery(data.find(item => item.id === id));
+        return gallery;
       }),
       catchError(this.handleError));
   };
