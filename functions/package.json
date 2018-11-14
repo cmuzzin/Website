@@ -12,11 +12,7 @@
     "firebase": "^5.0.3",
     "firebase-admin": "^6.0.0",
     "firebase-functions": "^2.0.5",
-<<<<<<< HEAD
-    "nodemailer": "^4.0.1"
-=======
     "nodemailer": "^4.6.8"
->>>>>>> 687ba1841b0a6a2d9d616f4d5de698482f443a9d
   },
   "private": true
 }

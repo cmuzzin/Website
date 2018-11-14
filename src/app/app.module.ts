@@ -6,25 +6,30 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {environment} from "../environments/environment";
 import {SharedModule} from "./shared/shared.module";
 import {HomeModule} from "./home/home.module";
-import { GalleryComponent } from './gallery/gallery.component';
 import {AngularFireDatabaseModule} from "@angular/fire/database";
 import {AngularFireModule} from "@angular/fire";
 import {AngularFireFunctionsModule} from "@angular/fire/functions";
+import {HttpClientModule} from "@angular/common/http";
+import { GalleryModule } from './gallery/gallery.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    GalleryComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    AppRoutingModule,
     ToastrModule.forRoot(),
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireFunctionsModule,
+    SharedModule.forRoot(),
     HomeModule,
-    SharedModule.forRoot()
+    GalleryModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

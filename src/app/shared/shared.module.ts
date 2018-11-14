@@ -6,7 +6,6 @@ import {HeroComponent} from "./components/hero/hero.component";
 import {NavComponent} from "./components/nav/nav.component";
 import {ModalComponent} from './components/modal/modal.component';
 import {CommonModule} from "@angular/common";
-import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AppRoutingModule} from "../app-routing.module";
 
@@ -14,17 +13,13 @@ import {AppRoutingModule} from "../app-routing.module";
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule
   ],
   declarations: [FooterComponent, HeroComponent, NavComponent, ModalComponent],
   entryComponents: [],
   exports: [
-    CommonModule,
     FormsModule,
-    HttpClientModule,
-    AppRoutingModule,
     ReactiveFormsModule,
     FooterComponent,
     HeroComponent,

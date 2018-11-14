@@ -3,7 +3,7 @@
   <button class="button is-dark-blue is-outlined is-inline is-pulled-left" [routerLink]="['/home']">Back To Home</button>
   <h2 class="title is-size-1-desktop is-size-3-mobile is-inline">{{gallery.name}}</h2>
   <div class="columns is-multiline is-vcentered mt-3">
-    <div class="column is-one-third" *ngFor="let image of gallery.images">
+    <div class="column is-one-quarter" *ngFor="let image of gallery.images">
       <div class="overlay-container">
         <div class="card overlay-image">
           <div class="card-body">
