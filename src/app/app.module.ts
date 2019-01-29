@@ -29,7 +29,6 @@ import { AppRoutingModule } from './app-routing.module';
     SharedModule.forRoot(),
     HomeModule,
     GalleryModule
-   
   ],
   providers: [],
   bootstrap: [AppComponent]
