@@ -1,0 +1,36 @@
+.overlay-container {
+  position: relative;
+}
+
+.overlay-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-container:hover .overlay-image {
+  opacity: 0.3;
+  background-color: hsl(0, 0%, 48%)
+}
+
+.overlay-container:hover .overlay-middle {
+  opacity: 1;
+}
+
+i.overlay-icon{
+  font-size: 7em;
+  color: $dark-blue;
+}
