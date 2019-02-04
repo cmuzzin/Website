@@ -12,7 +12,6 @@ exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onWri
 // Only send email for new messages.
   if (change.before.exists()) {
     //Do nothing if data is edited or deleted
-    console.log('Message edited or deleted - skip');
     return;
   }
 
