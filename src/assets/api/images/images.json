@@ -43,20 +43,26 @@
   },
   {
     "id": "2",
-    "name": "App Two",
-    "images": [],
-    "icon": "fab fa-spotify"
-  },
-  {
-    "id": "3",
-    "name": "App Three",
+    "name": "SPC",
     "images": [],
     "icon": "far fa-building"
   },
   {
+    "id": "3",
+    "name": "Spotify Playground",
+    "images": [],
+    "icon": "fab fa-spotify"
+  },
+  {
     "id": "4",
-    "name": "App Three",
+    "name": "Angular Playground",
     "images": [],
     "icon": "fab fa-angular"
+  },
+  {
+    "id": "5",
+    "name": "Hands Up",
+    "images": [],
+    "icon": ""
   }
 ]
