@@ -18,9 +18,7 @@ export class HomeComponent implements OnInit {
               private toastr: ToastrService) {
   }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   onSubmit() {
     const {name, email, subject, message} = this.form.value;
@@ -34,6 +32,6 @@ export class HomeComponent implements OnInit {
     this.db.list('/messages').push(formRequest);
     this.toastr.success('Thanks!', 'I received your message!');
     this.form.reset();
-  };
+  }
 
 }
