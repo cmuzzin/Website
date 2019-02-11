@@ -1,10 +1,13 @@
 import {Injectable} from '@angular/core';
-import {HttpClient, HttpErrorResponse} from "@angular/common/http";
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {throwError} from 'rxjs';
 import {map, catchError} from 'rxjs/operators';
-import {Gallery} from "../dtos/gallary";
+import {Gallery} from '../dtos/gallary';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
+
 export class ImagesService {
   private imageUrl = 'assets/api/images/images.json';
 
@@ -14,17 +17,17 @@ export class ImagesService {
   getGalleries() {
     return this.http.get(this.imageUrl).pipe(
       map((data: any) => data.map(item => new Gallery(item))),
-      catchError(this.handleError))
-  };
+      catchError(this.handleError));
+  }
 
   getGallery(id) {
     return this.http.get(this.imageUrl).pipe(
-      map((data : any) => {
+      map((data: any) => {
         const gallery = new Gallery(data.find(item => item.id === id));
         return gallery;
       }),
       catchError(this.handleError));
-  };
+  }
 
   private handleError(err: HttpErrorResponse) {
     let errorMessage = '';

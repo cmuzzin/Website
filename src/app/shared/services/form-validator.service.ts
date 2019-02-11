@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import each from 'lodash-es/each';
 import omit from 'lodash-es/omit';
 import { debounceTime, map } from 'rxjs/operators';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 
 export class FormValidatorService {
   form: FormGroup;
@@ -41,7 +43,7 @@ export class FormValidatorService {
     this.form.valueChanges.pipe(
       debounceTime(500)
     ).subscribe(() => this.updateErrorMessages());
-  };
+  }
 
   private updateErrorMessages() {
     const form = this.form;

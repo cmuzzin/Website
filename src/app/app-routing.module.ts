@@ -13,6 +13,10 @@ const routes: Routes = [
     component: GalleryComponent,
     path: 'gallery/:id'
   },
+  {
+    path: '**',
+    redirectTo: 'home'
+  }
 ];
 
 @NgModule({

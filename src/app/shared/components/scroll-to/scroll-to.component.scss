@@ -1,0 +1,29 @@
+@import "../../../../variables";
+@import "~bootstrap/scss/functions";
+
+.scrollTo {
+  position: fixed;
+  opacity: 0;
+  text-align: center;
+  transition: .5s linear all;
+  z-index: 1071;
+  &.top {
+    bottom: 57px;
+    right: 17px;
+  }
+
+  &.bottom {
+    bottom: 15px;
+    right: 17px;
+  }
+
+  i {
+    font-size: 40px;
+    color: $spc;
+    cursor: pointer;
+  }
+
+  &.visible {
+    opacity: 1;
+  }
+}
