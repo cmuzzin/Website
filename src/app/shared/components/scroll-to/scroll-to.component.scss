@@ -1,5 +1,4 @@
-@import "../../../../variables";
-@import "~bootstrap/scss/functions";
+@import '../../../../variables.scss';
 
 .scrollTo {
   position: fixed;
@@ -8,7 +7,7 @@
   transition: .5s linear all;
   z-index: 1071;
   &.top {
-    bottom: 57px;
+    bottom: 15px;
     right: 17px;
   }
 
@@ -19,7 +18,7 @@
 
   i {
     font-size: 40px;
-    color: $spc;
+    color: $dark-blue;
     cursor: pointer;
   }
 

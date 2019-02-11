@@ -8,6 +8,7 @@ import { Component, HostListener } from '@angular/core';
 export class ScrollToComponent {
   toTop = false;
   toBottom = true;
+  inFooter = false;
 
   @HostListener('window:scroll', ['$event'])
   scroll() {
@@ -16,11 +17,11 @@ export class ScrollToComponent {
   }
 
   scrollTop() {
-    window.scrollTo({ left: 0, top: 0, behavior: 'instant' });
+    window.scrollTo({ left: 0, top: 0, behavior: 'auto' });
   }
 
   scrollBottom() {
-    window.scrollTo({ left: 0, top: document.documentElement.scrollHeight, behavior: 'instant' });
+    window.scrollTo({ left: 0, top: document.documentElement.scrollHeight, behavior: 'auto' });
   }
 
 }
