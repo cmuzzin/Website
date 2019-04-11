@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
-import {ImagesService} from "../shared/services/image.service";
+import {ActivatedRoute} from '@angular/router';
+import {ImagesService} from '../shared/services/image.service';
 import { Gallery } from '../shared/dtos/gallary';
+import { Image } from '../shared/dtos/image';
 
 @Component({
   selector: 'app-gallery',
@@ -10,6 +11,8 @@ import { Gallery } from '../shared/dtos/gallary';
 })
 export class GalleryComponent implements OnInit {
   gallery: Gallery;
+  acttiveImage: Image;
+  modalVisibility = false;
   constructor(private ar: ActivatedRoute, private imagesService: ImagesService) { }
 
   ngOnInit() {
@@ -22,6 +25,15 @@ export class GalleryComponent implements OnInit {
         console.log(error);
       }
     );
+  }
+
+  onViewClick(image: Image) {
+    this.acttiveImage = image;
+    this.modalVisibility = !this.modalVisibility;
+  }
+
+  handleModalChange(ev: boolean) {
+    this.modalVisibility = ev;
   }
 
 }

@@ -5,6 +5,9 @@ import { RecentWorkComponent } from './recent-work/recent-work.component';
 import {SharedModule} from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { SkillsComponent } from './skills/skills.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   imports: [
@@ -12,7 +15,7 @@ import { CommonModule } from '@angular/common';
     SharedModule,
     RouterModule.forChild([])
   ],
-  declarations: [HomeComponent, AboutMeComponent, RecentWorkComponent],
+  declarations: [HomeComponent, AboutMeComponent, RecentWorkComponent, SkillsComponent, ExperienceComponent, ContactFormComponent],
   exports: []
 })
 export class HomeModule {

@@ -1,0 +1,78 @@
+<section class="has-background-section-grey contact">
+  <div class="container">
+    <h2 class="title is-spaced is-size-2-desktop is-size-4-mobile has-text-centered">Contact</h2>
+    <div class="columns is-centered m-1">
+      <div class="column">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input class="input" type="text" placeholder="Name" name="name" id="name" formControlName="name"
+                         [ngClass]="{'is-danger': formErrors.name}">
+                  <span class="icon is-small is-left">
+          <i class="fa fa-user"></i>
+        </span>
+                </p>
+                <p class="help is-danger is-small">{{formErrors.name}}</p>
+              </div>
+              <div class="field">
+                <p class="control is-expanded has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Email" name="email" id="email"
+                         formControlName="email"
+                         [ngClass]="{'is-danger': formErrors.email}">
+                  <span class="icon is-small is-left">
+          <i class="fa fa-envelope"></i>
+        </span>
+                </p>
+                <p class="help is-danger is-small">{{formErrors.email}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" placeholder="Subject" name="subject" id="subject"
+                         formControlName="subject"
+                         [ngClass]="{'is-danger': formErrors.subject}">
+                </div>
+                <p class="help is-danger is-small">{{formErrors.subject}}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                            <textarea class="textarea"
+                                      placeholder="Leave a me a message"
+                                      name="message"
+                                      id="message"
+                                      formControlName="message"
+                                      maxlength="251"
+                                      [ngClass]="{'is-danger': formErrors.message}">
+
+                            </textarea>
+                </div>
+                <p class="help is-danger is-small">{{formErrors.message}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <button type="submit" class="button is-dark-blue is-pulled-right" [disabled]="form.invalid">
+                    Send message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

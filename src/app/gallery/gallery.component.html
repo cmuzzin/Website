@@ -1,27 +1,37 @@
-<section id="gallery">
-<div class="container is-fluid has-text-centered" *ngIf="gallery">
-  <button class="button is-dark-blue is-outlined is-inline is-pulled-left" [routerLink]="['/home']">Back To Home</button>
-  <h2 class="title is-size-1-desktop is-size-3-mobile is-inline">{{gallery.name}}</h2>
+<section id="gallery" *ngIf="gallery">
+<div class="container is-fluid">
+  <button class="button is-dark-blue is-outlined" [routerLink]="['/home']">Back To Home</button>
+  <article class="message is-dark-blue mt-3">
+    <div class="message-body">
+      <h2 class="title is-size-1-desktop is-size-3-mobile">{{gallery.name}}</h2>
+      <p class="subtitle is-size-5-desktop">
+       {{gallery.description}}
+      </p>
+    </div>
+  </article>
   <div class="columns is-multiline is-vcentered mt-3">
     <div class="column is-one-quarter" *ngFor="let image of gallery.images">
       <div class="overlay-container">
         <div class="card overlay-image">
-          <div class="card-body">
             <div class="card-content has-text-centered">
               <div></div>
               <figure class="image is-4by3">
                 <img src="{{image.url}}" alt="Placeholder image">
               </figure>
-            </div>
           </div>
         </div>
         <div class="overlay-middle">
           <div class="has-text-centered">
-            <button class="button is-dark-blue is-large">View Image - {{image.view}}</button>
+            <button class="button is-dark-blue is-large" (click)="onViewClick(image)">View</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<app-modal [images]="gallery.images"
+           [activeImage]="acttiveImage"
+           [isActive]="modalVisibility"
+           (onModalChange)="handleModalChange($event)"
+           *ngIf="modalVisibility"></app-modal>
 </section>

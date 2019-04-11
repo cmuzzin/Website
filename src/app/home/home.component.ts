@@ -3,6 +3,8 @@ import {FormGroup} from '@angular/forms';
 import {FormValidatorService} from '../shared/services/form-validator.service';
 import {ToastrService} from 'ngx-toastr';
 import {AngularFireDatabase} from '@angular/fire/database';
+import { Gallery } from '../shared/dtos/gallary';
+import { ImagesService } from '../shared/services/image.service';
 
 @Component({
   selector: 'app-home',
@@ -12,16 +14,21 @@ import {AngularFireDatabase} from '@angular/fire/database';
 export class HomeComponent implements OnInit {
   form: FormGroup = this.customValidatorService.form;
   formErrors = FormValidatorService.formErrors;
+  galleries: Array<Gallery>;
 
   constructor(private db: AngularFireDatabase,
               private customValidatorService: FormValidatorService,
-              private toastr: ToastrService) {
+              private toastr: ToastrService,
+              private imageService: ImagesService) {
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.imageService.getGalleries().subscribe(
+      data => this.galleries = data);
+  }
 
-  onSubmit() {
-    const {name, email, subject, message} = this.form.value;
+  onSubmit(form: FormGroup) {
+    const {name, email, subject, message} = form.value;
     const html = `
       <div>From: ${name}</div>
       <div>Email: <a href='mailto:${email}'>${email}</a></div>

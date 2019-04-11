@@ -39,30 +39,32 @@
         "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/mcm%2Fmcm-print.png?alt=media&token=26398d31-9025-4703-9fb3-df5a62c0099b"
       }
     ],
-    "icon": "far fa-calendar-alt"
+    "icon": "far fa-calendar-alt",
+    "description": "Marketing and advertising interactive calendar for scheduling emails sent out to card holders",
+    "image": ""
   },
   {
     "id": "2",
     "name": "SPC",
     "images": [],
-    "icon": "far fa-building"
+    "icon": "far fa-building",
+    "description": "Store planning and construction application including inventory management",
+    "image": ""
   },
   {
     "id": "3",
     "name": "Spotify Playground",
     "images": [],
-    "icon": "fab fa-spotify"
-  },
-  {
-    "id": "4",
-    "name": "Angular Playground",
-    "images": [],
-    "icon": "fab fa-angular"
+    "icon": "fab fa-spotify",
+    "description": "Angular application that leverages Spotify's API",
+    "image": ""
   },
   {
     "id": "5",
     "name": "Hands Up",
     "images": [],
-    "icon": ""
+    "icon": "",
+    "description": "Personal boxing app focused on automating round circulation in a real match",
+    "image": "../../../assets/gloves.png"
   }
 ]

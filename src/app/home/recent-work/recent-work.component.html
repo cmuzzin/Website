@@ -1,16 +1,16 @@
 <section id="recentWork" class="has-text-centered">
   <div class="container">
-    <h2 class="title is-spaced is-size-3-desktop is-size-4-mobile">Recent Work</h2>
+    <h2 class="title is-spaced is-size-3-desktop is-size-4-mobile">Projects</h2>
+    <h2 class="title is-spaced is-size-3-desktop is-size-4-mobile"></h2>
     <div class="columns is-multiline is-centered is-vcentered">
       <div class="column is-one-quarter" *ngFor="let gallery of galleries">
         <div class="overlay-container">
           <div class="card overlay-image">
-            <div class="card-body">
               <div class="card-content has-text-centered">
                 <div></div>
-                <i class="overlay-icon fa {{gallery.icon}}"></i>
+                <i class="overlay-icon fa {{gallery.icon}}" *ngIf="gallery.icon"></i>
+                <img src="{{gallery.image}}" *ngIf="gallery.image">
               </div>
-            </div>
           </div>
           <div class="overlay-middle">
             <div class="has-text-centered">

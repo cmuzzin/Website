@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {ImagesService} from "../../shared/services/image.service";
-import {Gallery} from "../../shared/dtos/gallary";
+import { Component, OnInit, Input } from '@angular/core';
+import { Gallery } from '../../shared/dtos/gallary';
 
 @Component({
   selector: 'app-recent-work',
@@ -8,16 +7,9 @@ import {Gallery} from "../../shared/dtos/gallary";
   styleUrls: ['./recent-work.component.scss']
 })
 export class RecentWorkComponent implements OnInit {
+  @Input() galleries: Array<Gallery>;
+  constructor() {}
 
-  galleries: Array<Gallery>;
-
-  constructor(private imageService: ImagesService) {
-  }
-
-  ngOnInit() {
-    this.imageService.getGalleries().subscribe(data => {
-      this.galleries = data;
-    });
-  }
+  ngOnInit() {}
 
 }

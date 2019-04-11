@@ -2,7 +2,6 @@ import {ModuleWithProviders, NgModule} from '@angular/core';
 import {FooterComponent} from './components/footer/footer.component';
 import {HeroComponent} from './components/hero/hero.component';
 import {NavComponent} from './components/nav/nav.component';
-import {ModalComponent} from './components/modal/modal.component';
 import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AppRoutingModule} from '../app-routing.module';
@@ -15,7 +14,7 @@ import { ScrollToComponent } from './components/scroll-to/scroll-to.component';
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  declarations: [FooterComponent, HeroComponent, NavComponent, ModalComponent, ScrollToComponent],
+  declarations: [FooterComponent, HeroComponent, NavComponent, ScrollToComponent],
   entryComponents: [],
   exports: [
     FormsModule,
@@ -23,7 +22,6 @@ import { ScrollToComponent } from './components/scroll-to/scroll-to.component';
     FooterComponent,
     HeroComponent,
     NavComponent,
-    ModalComponent,
     ScrollToComponent]
 })
 export class SharedModule {

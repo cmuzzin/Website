@@ -24,7 +24,7 @@
     "@fortawesome/fontawesome-free": "^5.3.1",
     "@fortawesome/fontawesome-free-webfonts": "^1.0.4",
     "@types/lodash": "^4.14.106",
-    "bulma": "^0.7.2",
+    "bulma": "^0.7.4",
     "bulma-divider": "^2.0.1",
     "core-js": "^2.5.5",
     "@angular/fire": "^5.0.2",

@@ -1,0 +1,18 @@
+<div class="modal" [ngClass]="{'is-active': isActive}">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+        <p class="modal-card-title">{{activeImage.view}}</p>
+        <button class="delete" aria-label="close" (click)="close()"></button>
+    </header>
+    <section class="modal-card-body">
+      <figure class="image" *ngIf="activeImage">
+          <img src="{{activeImage.url}}">
+      </figure>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-primary is-outlined" (click)="onPrev()" [disabled]="prevBtnDisabled">Prev</button>
+      <button class="button is-primary is-outlined ml-1" (click)="onNext()" [disabled]="nextBtnDisabled">Next</button>
+    </footer>
+  </div>
+</div>
