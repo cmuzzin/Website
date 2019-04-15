@@ -1,6 +1,17 @@
-.card-content {
-  height: 15rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@import "../../../variables.scss";
+.card {
+  display:flex;
+  flex-direction: column;
+  &:hover {
+     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.image {
+  height: inherit;
+}
+
+.fa {
+  font-size: 10em;
+  color: $dark-blue;
 }
