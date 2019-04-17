@@ -40,23 +40,64 @@
       }
     ],
     "icon": "far fa-calendar-alt",
-    "description": "Marketing and advertising interactive calendar for scheduling emails sent out to card holders",
+    "description": "Tnteractive calendar for marketing and advertising email scheduling for card holders.",
     "image": ""
   },
   {
     "id": "2",
     "name": "SPC",
-    "images": [],
+    "images": [
+      {
+        "id": "1",
+        "view": "Login",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Flogin.png?alt=media&token=435dde09-757d-4676-85b6-22898e86633d"
+      },
+      {
+        "id": "2",
+        "view": "Search",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fsearch.png?alt=media&token=74582f9f-0a96-4419-b9d8-31d7d6f2351f"
+      },
+      {
+        "id": "3",
+        "view": "Form",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fform-two.png?alt=media&token=dd6db32f-1fe7-4fc6-a9a9-cd7f3e18a0ef"
+      },
+      {
+        "id": "6",
+        "view": "Form (children)",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fform-validation.png?alt=media&token=4b15b830-3794-4cb1-97ae-6c644ef5ca19"
+      },
+      {
+        "id": "7",
+        "view": "Item Edit",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fitem-edit.png?alt=media&token=ed9e18c9-bae3-4dff-87cd-a848f5200c2d"
+      },
+      {
+        "id": "8",
+        "view": "Notes Modal",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fnotes-modal.png?alt=media&token=6930cd1f-c223-4bde-9703-a2371ec33d62"
+      },
+      {
+        "id": "9",
+        "view": "Sqft Calc Modal",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fsqft-calc.png?alt=media&token=d8bab0be-8918-441b-a38b-1890f94f3b63"
+      },
+      {
+        "id": "10",
+        "view": "Delete Modal",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fdelete%20modal.png?alt=media&token=43a24c47-3970-41ce-9d99-2df702cdf917"
+      }
+    ],
     "icon": "far fa-building",
-    "description": "Store planning and construction application including inventory management",
+    "description": "Store planning and iventory management application.",
     "image": ""
   },
   {
     "id": "3",
-    "name": "Spotify Playground",
+    "name": "Litty Spot",
     "images": [],
     "icon": "fab fa-spotify",
-    "description": "Angular application that leverages Spotify's API",
+    "description": "Angular application that leverages Spotify's API.",
     "image": ""
   },
   {
@@ -64,7 +105,7 @@
     "name": "Hands Up",
     "images": [],
     "icon": "",
-    "description": "Personal boxing app focused on automating round circulation in a real match",
-    "image": "../../../assets/gloves.png"
+    "description": "Personal boxing app focused on automating round circulation in a real match.",
+    "image": "../../../assets/gloves.svg"
   }
 ]

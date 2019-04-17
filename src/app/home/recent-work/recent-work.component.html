@@ -3,15 +3,11 @@
     <h2 class="title is-spaced is-size-3-desktop is-size-4-mobile">Projects</h2>
     <div class="columns is-multiline is-centered is-vcentered m-2">
       <div class="column is-one-quarter" *ngFor="let gallery of galleries">
-          <div class="panel">
-            <div class="card-image">
-                <figure class="image">
-                    <i class="fa {{gallery.icon}}" *ngIf="gallery.icon"></i>
-                    <img class="" src="{{gallery.image}}" *ngIf="gallery.image">
-                 </figure>
-            </div>
+          <div class="card">
             <div class="card-content has-text-centered">
-              <button class="button is-dark-blue is-rounded is-outlined is-fullwidth" [routerLink]="['/gallery', gallery.id]">{{gallery.name}}</button>
+                  <img src="{{gallery.image}}"  *ngIf="gallery.image">
+                  <i class="fa {{gallery.icon}} mb-3" *ngIf="gallery.icon"></i>
+                  <button class="button is-dark-blue is-rounded is-outlined is-block is-fullwidth" [routerLink]="['/gallery', gallery.id]">{{gallery.name}}</button>
             </div>
           </div>
         </div>

@@ -6,9 +6,7 @@
         <button class="delete" aria-label="close" (click)="close()"></button>
     </header>
     <section class="modal-card-body">
-      <figure class="image" *ngIf="activeImage">
-          <img src="{{activeImage.url}}">
-      </figure>
+      <img src="{{activeImage.url}}">
     </section>
     <footer class="modal-card-foot">
       <button class="button is-primary is-outlined" (click)="onPrev()" [disabled]="prevBtnDisabled">Prev</button>

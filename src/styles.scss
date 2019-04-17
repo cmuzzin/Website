@@ -14,6 +14,12 @@ section {
   padding: 25px 0;
 }
 
+.card {
+  &:hover {
+     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .social-icons a.button {
   background-color: transparent;
   color: #fff;
