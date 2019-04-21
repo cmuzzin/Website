@@ -54,13 +54,23 @@
       },
       {
         "id": "2",
+        "view": "Landing",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2FLanding%20Page.PNG?alt=media&token=ba26c293-5fc7-42d1-9249-41decf1f9eec"
+      },
+      {
+        "id": "3",
         "view": "Search",
         "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fsearch.png?alt=media&token=74582f9f-0a96-4419-b9d8-31d7d6f2351f"
       },
       {
-        "id": "3",
+        "id": "4",
         "view": "Form",
         "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fform-two.png?alt=media&token=dd6db32f-1fe7-4fc6-a9a9-cd7f3e18a0ef"
+      },
+      {
+        "id": "5",
+        "view": "Form Two",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2FAdd%20Store%20Page.PNG?alt=media&token=7bb417b9-f0c8-41a3-a686-a8b3b1243bb2"
       },
       {
         "id": "6",
@@ -69,21 +79,26 @@
       },
       {
         "id": "7",
-        "view": "Item Edit",
+        "view": "Item Class",
         "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fitem-edit.png?alt=media&token=ed9e18c9-bae3-4dff-87cd-a848f5200c2d"
       },
       {
         "id": "8",
+        "view": "Item Edit",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2FAdd%20Item%20Page.PNG?alt=media&token=1defd39d-85a1-4b48-922c-a5fcc4d39c14"
+      },
+      {
+        "id": "9",
         "view": "Notes Modal",
         "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fnotes-modal.png?alt=media&token=6930cd1f-c223-4bde-9703-a2371ec33d62"
       },
       {
-        "id": "9",
+        "id": "10",
         "view": "Sqft Calc Modal",
         "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fsqft-calc.png?alt=media&token=d8bab0be-8918-441b-a38b-1890f94f3b63"
       },
       {
-        "id": "10",
+        "id": "11",
         "view": "Delete Modal",
         "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/SPC%2Fdelete%20modal.png?alt=media&token=43a24c47-3970-41ce-9d99-2df702cdf917"
       }
