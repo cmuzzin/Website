@@ -122,5 +122,49 @@
     "icon": "",
     "description": "Personal boxing app focused on automating round circulation in a real match.",
     "image": "../../../assets/gloves.svg"
+  },
+  {
+    "id": "6",
+    "name": "Email Set-Up",
+    "images": [
+      {
+        "id": "1",
+        "view": "Step 1",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/email-flow%2Fstep-1.png?alt=media&token=cea0769b-bedc-43e0-a629-4ceae9f90065"
+      },
+      {
+        "id": "2",
+        "view": "Step 2",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/email-flow%2Fstep-2.png?alt=media&token=3ee4914d-fae1-4841-9ee3-23b1feba13c3"
+      },
+      {
+        "id": "3",
+        "view": "Step 3",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/email-flow%2Fstep-3.png?alt=media&token=91ffe1e1-a5bc-49b0-83bf-f88238a29853"
+      },
+      {
+        "id": "4",
+        "view": "Step 4",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/email-flow%2Fstep-4.png?alt=media&token=67cafe2a-aeb7-464a-ab5a-af280b54ee0d"
+      },
+      {
+        "id": "5",
+        "view": "Step 5",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/email-flow%2Fstep-5.png?alt=media&token=751c33fe-61c7-4777-adc9-b3023da6485a"
+      },
+      {
+        "id": "6",
+        "view": "Step 6",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/email-flow%2Fstep-6.png?alt=media&token=b27bc5c5-10ff-4220-b115-e36176a4ff6a"
+      },
+      {
+        "id": "7",
+        "view": "Step 7",
+        "url": "https://firebasestorage.googleapis.com/v0/b/website-86266.appspot.com/o/email-flow%2Fstep-7.png?alt=media&token=28e9f53b-2c7c-41eb-95d6-134b47bf8f3f"
+      }
+    ],
+    "icon": "far fa-envelope",
+    "description": "Wizard stepper for setting up a marketing email sent to card holders.",
+    "image": ""
   }
 ]
