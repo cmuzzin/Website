@@ -40,7 +40,7 @@
       }
     ],
     "icon": "far fa-calendar-alt",
-    "description": "Tnteractive calendar for marketing and advertising email scheduling for card holders.",
+    "description": "Interactive calendar for marketing and advertising email scheduling for card holders.",
     "image": ""
   },
   {
@@ -109,22 +109,6 @@
   },
   {
     "id": "3",
-    "name": "Litty Spot",
-    "images": [],
-    "icon": "fab fa-spotify",
-    "description": "Angular application that leverages Spotify's API.",
-    "image": ""
-  },
-  {
-    "id": "5",
-    "name": "Hands Up",
-    "images": [],
-    "icon": "",
-    "description": "Personal boxing app focused on automating round circulation in a real match.",
-    "image": "../../../assets/gloves.svg"
-  },
-  {
-    "id": "6",
     "name": "Email Set-Up",
     "images": [
       {
@@ -166,5 +150,22 @@
     "icon": "far fa-envelope",
     "description": "Wizard stepper for setting up a marketing email sent to card holders.",
     "image": ""
+  },
+  {
+    "id": "4",
+    "name": "Litty Spot",
+    "images": [],
+    "icon": "fab fa-spotify",
+    "description": "Angular application that leverages Spotify's API.",
+    "image": "",
+    "external_url": "https://littyspot.com"
+  },
+  {
+    "id": "5",
+    "name": "Hands Up",
+    "images": [],
+    "icon": "",
+    "description": "Personal boxing app focused on automating round circulation in a real match.",
+    "image": "../../../assets/gloves.svg"
   }
 ]

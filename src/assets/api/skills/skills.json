@@ -1,0 +1,13 @@
+{
+  "JavaScript": [
+      "ES5", "ES6", "AngularJS", "Angular", "TypeScript", "RxJS", "Ionic",
+      "React", "React Native", "Redux", "Flux", "Node.js", "jQuery"
+    ],
+  "CSS" :[
+    "Bootstrap (3 & 4", "Bulma", "Material UI", "Semantic UI", "SASS", "SCSS"
+  ],
+  "Tools": [
+    "Firebase", "Git", "TFS", "Jira", "NPM", "Google Analytics", "Google Tag Manager",
+    "Karma", "Protractor", "Jasmine"
+  ]
+}

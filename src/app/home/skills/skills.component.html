@@ -5,44 +5,25 @@
       <div class="column is-one-third">
         <h3 class="subtitle is-size-3-desktop">JavaScript</h3>
         <div class="tags are-medium">
-            <span class="tag is-dark-blue">ES5</span>
-            <span class="tag is-dark-blue">ES6</span>
-            <span class="tag is-dark-blue">Angular</span>
-            <span class="tag is-dark-blue">Angular JS</span>
-            <span class="tag is-dark-blue">TypeScript</span>
-            <span class="tag is-dark-blue">RxJS</span>
-            <span class="tag is-dark-blue">Ionic</span>
-            <span class="tag is-dark-blue">React</span>
-            <span class="tag is-dark-blue">React Native</span>
-            <span class="tag is-dark-blue">Redux</span>
-            <span class="tag is-dark-blue">Flux</span>
-            <span class="tag is-dark-blue">Node.js</span>
+          <span class="tag is-dark-blue" *ngFor="let tag of skills.JavaScript">
+            {{tag}}
+          </span>
         </div>
       </div>
       <div class="column is-one-third">
         <h3 class="subtitle is-size-3-desktop">CSS</h3>
         <div class="tags are-medium">
-            <span class="tag is-primary">Bootstrap (3 & 4)</span>
-            <span class="tag is-primary">Bulma</span>
-            <span class="tag is-primary">Material UI</span>
-            <span class="tag is-primary">Semantic UI</span>
-            <span class="tag is-primary">SASS</span>
-            <span class="tag is-primary">SCSS</span>
+          <span class="tag is-primary" *ngFor="let tag of skills.CSS">
+            {{tag}}
+          </span>
         </div>
       </div>
       <div class="column is-one-third">
           <h3 class="subtitle is-size-3-desktop">Tools</h3>
           <div class="tags are-medium">
-              <span class="tag is-info">Git</span>
-              <span class="tag is-info">Team Foundation Server</span>
-              <span class="tag is-info">Jira</span>
-              <span class="tag is-info">Firebase</span>
-              <span class="tag is-info">NPM</span>
-              <span class="tag is-info">Google Analytics</span>
-              <span class="tag is-info">Google Tag Manager</span>
-              <span class="tag is-info">Karma</span>
-              <span class="tag is-info">Protractor</span>
-              <span class="tag is-info">Jasmine</span>
+            <span class="tag is-info" *ngFor="let tag of skills.Tools">
+              {{tag}}
+            </span>
           </div>
         </div>
     </div>

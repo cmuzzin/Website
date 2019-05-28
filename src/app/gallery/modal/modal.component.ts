@@ -1,5 +1,5 @@
-import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
-import {head, last} from 'lodash-es';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { head, last } from 'lodash-es';
 import { Image } from '../..//shared/dtos/image';
 
 @Component({
@@ -18,44 +18,24 @@ export class ModalComponent implements OnInit {
 
   ngOnInit() {
     const start = this.images.indexOf(head(this.images));
-    const end = this.images.indexOf(last(this.images));
     const index = this.images.indexOf(this.activeImage);
-    if (start === index) {
-      this.prevBtnDisabled = true;
-    }
-    if (end === index) {
-      this.nextBtnDisabled = true;
-    }
+    start === index ? this.prevBtnDisabled = true : this.nextBtnDisabled = true;
   }
 
   onPrev() {
      const start = this.images.indexOf(head(this.images));
      const nextIndex = this.images.indexOf(this.activeImage) - 1;
-     if (start === nextIndex) {
-        this.activeImage = this.images[nextIndex];
-        this.prevBtnDisabled = true;
-        this.nextBtnDisabled = false;
-        return;
-     }
-     if (nextIndex !== -1) {
-       this.activeImage = this.images[nextIndex];
-       this.nextBtnDisabled = false;
-     }
+     this.activeImage = start === nextIndex ? this.images[start] : this.images[nextIndex];
+     this.prevBtnDisabled = start === nextIndex;
+     this.nextBtnDisabled = false;
   }
 
   onNext() {
     const end = this.images.indexOf(last(this.images));
     const nextIndex = this.images.indexOf(this.activeImage) + 1;
-    if (end === nextIndex) {
-       this.activeImage = this.images[nextIndex];
-       this.prevBtnDisabled = false;
-       this.nextBtnDisabled = true;
-       return;
-    }
-    if (nextIndex !== -1) {
-      this.activeImage = this.images[nextIndex];
-      this.prevBtnDisabled = false;
-    }
+    this.activeImage = end === nextIndex ? this.images[end] : this.images[nextIndex];
+    this.prevBtnDisabled = false;
+    this.nextBtnDisabled = end === nextIndex;
   }
 
   close() {

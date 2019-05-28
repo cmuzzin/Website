@@ -6,6 +6,7 @@ export class Gallery {
   icon: string;
   description: string;
   image: string;
+  external_url: string;
   constructor(data) {
      Object.assign(this, data);
   }

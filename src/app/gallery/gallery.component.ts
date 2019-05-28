@@ -10,6 +10,7 @@ import { Image } from '../shared/dtos/image';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
+  galleries: Array<Gallery>;
   gallery: Gallery;
   acttiveImage: Image;
   modalVisibility = false;
@@ -17,6 +18,16 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit() {
     const id = this.ar.snapshot.params.id;
+    this.imagesService.getGalleries().subscribe(
+      data => {
+        this.galleries = data;
+      },
+      error => console.log(error)
+    );
+    this.getGallery(id);
+  }
+
+  getGallery(id: number) {
     this.imagesService.getGallery(id).subscribe(
       data => {
         this.gallery = data;
@@ -25,6 +36,10 @@ export class GalleryComponent implements OnInit {
         console.log(error);
       }
     );
+  }
+
+  onGalleryClick(id: number) {
+    this.getGallery(id);
   }
 
   onViewClick(image: Image) {

@@ -2,11 +2,16 @@
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head">
-        <p class="modal-card-title">{{activeImage.view}}</p>
+        <p class="modal-card-title">
+          {{activeImage.view}}
+          <span class="ml-5">{{activeImage.id}} / {{images.length}}</span>
+        </p>
         <button class="delete" aria-label="close" (click)="close()"></button>
     </header>
-    <section class="modal-card-body">
-      <img src="{{activeImage.url}}">
+    <section class="modal-card-body p-0">
+      <figure class="image">
+          <img class=im src="{{activeImage.url}}">
+      </figure>
     </section>
     <footer class="modal-card-foot">
       <button class="button is-primary is-outlined" (click)="onPrev()" [disabled]="prevBtnDisabled">Prev</button>

@@ -5,6 +5,7 @@ import {ToastrService} from 'ngx-toastr';
 import {AngularFireDatabase} from '@angular/fire/database';
 import { Gallery } from '../shared/dtos/gallary';
 import { ImagesService } from '../shared/services/image.service';
+import { SkillsService } from '../shared/services/tags.service';
 
 @Component({
   selector: 'app-home',
@@ -15,16 +16,20 @@ export class HomeComponent implements OnInit {
   form: FormGroup = this.customValidatorService.form;
   formErrors = FormValidatorService.formErrors;
   galleries: Array<Gallery>;
+  skills: Object;
 
   constructor(private db: AngularFireDatabase,
               private customValidatorService: FormValidatorService,
               private toastr: ToastrService,
-              private imageService: ImagesService) {
+              private imageService: ImagesService,
+              private skillsService: SkillsService) {
   }
 
   ngOnInit() {
     this.imageService.getGalleries().subscribe(
-      data => this.galleries = data);
+      (gallaries: any) => this.galleries = gallaries);
+    this.skillsService.getSkills().subscribe(
+      (skills: any) => this.skills = skills);
   }
 
   onSubmit(form: FormGroup) {

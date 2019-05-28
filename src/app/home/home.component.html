@@ -1,8 +1,11 @@
-<app-about-me></app-about-me>
-<app-skills></app-skills>
-<app-experience></app-experience>
-<app-recent-work [galleries]="galleries"></app-recent-work>
-<app-contact-form [form]="form" [formErrors]="formErrors" (onFormSubmit)="onSubmit($event)"></app-contact-form>
+<div>
+  <app-about-me></app-about-me>
+  <app-skills [skills]="skills"></app-skills>
+  <app-experience></app-experience>
+  <app-recent-work [galleries]="galleries"></app-recent-work>
+  <app-contact-form [form]="form" [formErrors]="formErrors" (onFormSubmit)="onSubmit($event)"></app-contact-form>
+</div>
+
 
 
 

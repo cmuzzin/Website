@@ -1,11 +1,17 @@
-<section id="gallery" class="m-3" *ngIf="gallery">
+<section id="gallery" class="m-1" *ngIf="gallery">
 <div class="container is-fluid">
-  <button class="button is-dark-blue is-outlined" [routerLink]="['/home']">Back To Home</button>
+  <button class="button is-dark-blue is-outlined is-inline" [routerLink]="['/home']">Back To Home</button>
+  <div class="buttons has-addons is-inline ml-3">
+  <span class="button" *ngFor="let gallery of galleries" (click)="onGalleryClick(gallery.id)">{{gallery.name}}</span>
+  </div>
   <article class="message is-dark-blue mt-3">
     <div class="message-body">
       <h2 class="title is-size-1-desktop is-size-3-mobile">{{gallery.name}}</h2>
       <p class="subtitle is-size-5-desktop">
        {{gallery.description}}
+      </p>
+      <p *ngIf="gallery.external_url">
+        <a class="button is-dark-blue" href="">Check it out</a>
       </p>
     </div>
   </article>
