@@ -40,7 +40,7 @@
       }
     ],
     "icon": "far fa-calendar-alt",
-    "description": "Interactive calendar for marketing and advertising email scheduling for card holders.",
+    "description": "Interactive calendar for marketing and advertising used to plan email scheduling.",
     "image": ""
   },
   {
@@ -104,7 +104,7 @@
       }
     ],
     "icon": "far fa-building",
-    "description": "Store planning and iventory management application.",
+    "description": "Store planning and inventory management application.",
     "image": ""
   },
   {
@@ -148,7 +148,7 @@
       }
     ],
     "icon": "far fa-envelope",
-    "description": "Wizard stepper for setting up a marketing email sent to card holders.",
+    "description": "Wizard stepper for setting up a emails that are sent to card holders.",
     "image": ""
   },
   {
@@ -165,7 +165,7 @@
     "name": "Hands Up",
     "images": [],
     "icon": "",
-    "description": "Personal boxing app focused on automating round circulation in a real match.",
+    "description": "Personal boxing app focused on automating round circulation.",
     "image": "../../../assets/gloves.svg"
   }
 ]

@@ -1,6 +1,6 @@
 <div class="modal" [ngClass]="{'is-active': isActive}">
   <div class="modal-background"></div>
-  <div class="modal-card">
+  <div class="modal-card m-3">
     <header class="modal-card-head">
         <p class="modal-card-title">
           {{activeImage.view}}
@@ -9,9 +9,7 @@
         <button class="delete" aria-label="close" (click)="close()"></button>
     </header>
     <section class="modal-card-body p-0">
-      <figure class="image">
-          <img class=im src="{{activeImage.url}}">
-      </figure>
+        <img src="{{activeImage.url}}">
     </section>
     <footer class="modal-card-foot">
       <button class="button is-primary is-outlined" (click)="onPrev()" [disabled]="prevBtnDisabled">Prev</button>

@@ -1,6 +1,7 @@
 .modal-card {
-  width: 85%;
-  .modal-card-body{
-    height: 800px;
+  height: 85%;
+  .modal-card-body, img {
+   height: 99%;
+   width: 100%;
   }
 }

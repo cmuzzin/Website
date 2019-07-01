@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   form: FormGroup = this.customValidatorService.form;
   formErrors = FormValidatorService.formErrors;
   galleries: Array<Gallery>;
-  skills: Object;
+  skills: Array<Object>;
 
   constructor(private db: AngularFireDatabase,
               private customValidatorService: FormValidatorService,

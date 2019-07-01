@@ -18,8 +18,14 @@ export class ModalComponent implements OnInit {
 
   ngOnInit() {
     const start = this.images.indexOf(head(this.images));
+    const end = this.images.indexOf(last(this.images));
     const index = this.images.indexOf(this.activeImage);
-    start === index ? this.prevBtnDisabled = true : this.nextBtnDisabled = true;
+    if (start === index) {
+      this.prevBtnDisabled = true;
+    }
+    if (end === index) {
+      this.nextBtnDisabled = true;
+    }
   }
 
   onPrev() {
@@ -34,8 +40,8 @@ export class ModalComponent implements OnInit {
     const end = this.images.indexOf(last(this.images));
     const nextIndex = this.images.indexOf(this.activeImage) + 1;
     this.activeImage = end === nextIndex ? this.images[end] : this.images[nextIndex];
-    this.prevBtnDisabled = false;
     this.nextBtnDisabled = end === nextIndex;
+    this.prevBtnDisabled = false;
   }
 
   close() {
