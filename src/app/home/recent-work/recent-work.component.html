@@ -1,16 +1,14 @@
 <section id="recentWork" class="has-text-centered">
-  <div class="container">
-    <h2 class="title is-spaced is-size-3-desktop is-size-4-mobile">Projects</h2>
-    <div class="columns is-multiline is-centered is-vcentered m-1">
-      <div class="column is-one-quarter" *ngFor="let gallery of galleries">
-          <div class="card">
-            <div class="card-content has-text-centered">
-                  <img src="{{gallery.image}}"  *ngIf="gallery.image">
-                  <i class="fa {{gallery.icon}} mb-3" *ngIf="gallery.icon"></i>
-                  <button class="button is-dark-blue is-rounded is-outlined is-block is-fullwidth"
-                  [routerLink]="['/gallery', gallery.id]">{{gallery.name}}
-                </button>
-            </div>
+  <h2 class="title is-spaced is-size-3-desktop is-size-4-mobile">Projects</h2>
+  <div class="columns is-multiline is-centered is-vcentered m-1">
+    <div class="column is-one-quarter" *ngFor="let gallery of galleries">
+        <div class="card">
+          <div class="card-content has-text-centered">
+                <img src="{{gallery.image}}"  *ngIf="gallery.image">
+                <i class="fa {{gallery.icon}} mb-3" *ngIf="gallery.icon"></i>
+                <button class="button is-dark-blue is-rounded is-outlined is-block is-fullwidth"
+                [routerLink]="['/gallery', gallery.id]">{{gallery.name}}
+              </button>
           </div>
         </div>
       </div>

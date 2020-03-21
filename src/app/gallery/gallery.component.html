@@ -1,10 +1,14 @@
 <section id="gallery" class="m-1" *ngIf="gallery">
 <div class="container is-fluid">
-  <button class="button is-dark-blue is-outlined is-inline" [routerLink]="['/home']">Back</button>
-  <div class="buttons has-addons is-inline ml-3">
-  <span class="button" [ngClass]="{'is-dark-blue is-focused': activeGallery === gallery.id}" *ngFor="let gallery of galleries; let i = index" (click)="onGalleryClick(gallery.id, i)">
-    <i class="fa {{gallery.icon}}" *ngIf="gallery.icon"></i>
-  </span>
+  <div class="is-flex">
+    <div class="flex-fill">
+      <button class="button is-dark-blue is-outlined" [routerLink]="['/home']">Back</button>
+    </div>
+    <div class="buttons has-addons is-inline">
+      <span class="button" [ngClass]="{'is-dark-blue is-focused': activeGallery === gallery.id}" *ngFor="let gallery of galleries; let i = index" (click)="onGalleryClick(gallery.id, i)">
+        <i class="fa {{gallery.icon}}" *ngIf="gallery.icon"></i>
+      </span>
+    </div>
   </div>
   <article class="message is-dark-blue mt-3">
     <div class="message-body">

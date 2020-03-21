@@ -1,31 +1,29 @@
 <section id="skills" class="has-background-section-grey has-text-centered" *ngIf="skills">
-  <div class="container">
-    <h2 class="title is-spaced is-size-2-desktop is-size-4-mobile">Skills</h2>
-    <div class="columns is-centered m-1">
-      <div class="column is-one-third">
-        <h3 class="subtitle is-size-3-desktop">JavaScript</h3>
-        <div class="tags are-medium">
-          <span class="tag is-dark-blue" *ngFor="let tag of skills.JavaScript">
-            {{tag}}
-          </span>
-        </div>
+  <h2 class="title is-spaced is-size-2-desktop is-size-4-mobile">Skills</h2>
+  <div class="columns is-centered m-1">
+    <div class="column is-one-third">
+      <h3 class="subtitle is-size-3-desktop">JavaScript</h3>
+      <div class="tags are-medium">
+        <span class="tag is-dark-blue" *ngFor="let tag of skills.JavaScript">
+          {{tag}}
+        </span>
       </div>
-      <div class="column is-one-third">
-        <h3 class="subtitle is-size-3-desktop">CSS</h3>
-        <div class="tags are-medium">
-          <span class="tag is-primary" *ngFor="let tag of skills.CSS">
-            {{tag}}
-          </span>
-        </div>
-      </div>
-      <div class="column is-one-third">
-          <h3 class="subtitle is-size-3-desktop">Tools</h3>
-          <div class="tags are-medium">
-            <span class="tag is-info" *ngFor="let tag of skills.Tools">
-              {{tag}}
-            </span>
-          </div>
-        </div>
     </div>
+    <div class="column is-one-third">
+      <h3 class="subtitle is-size-3-desktop">CSS</h3>
+      <div class="tags are-medium">
+        <span class="tag is-primary" *ngFor="let tag of skills.CSS">
+          {{tag}}
+        </span>
+      </div>
+    </div>
+    <div class="column is-one-third">
+        <h3 class="subtitle is-size-3-desktop">Tools</h3>
+        <div class="tags are-medium">
+          <span class="tag is-info" *ngFor="let tag of skills.Tools">
+            {{tag}}
+          </span>
+        </div>
+      </div>
   </div>
 </section>
