@@ -153,19 +153,11 @@
   },
   {
     "id": "4",
-    "name": "Litty Spot",
+    "name": "Spotify App",
     "images": [],
     "icon": "fab fa-spotify",
     "description": "Angular application that leverages Spotify's API.",
     "image": "",
-    "external_url": "https://littyspot.com"
-  },
-  {
-    "id": "5",
-    "name": "Hands Up",
-    "images": [],
-    "icon": "",
-    "description": "Personal boxing app focused on automating round circulation.",
-    "image": "../../../assets/gloves.svg"
+    "external_url": "https://my-spotify-1fdd4.firebaseapp.com/"
   }
 ]

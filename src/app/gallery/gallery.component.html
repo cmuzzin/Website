@@ -10,13 +10,13 @@
       <p class="subtitle is-size-5-desktop">
        {{gallery.description}}
       </p>
-      <p *ngIf="gallery.external_url">
+      <!-- <p *ngIf="gallery.external_url">
         <a class="button is-dark-blue" href="{{gallery.external_url}}" target="_">Check it out</a>
-      </p>
+      </p> -->
     </div>
   </article>
   <div class="columns is-multiline is-vcentered mt-3">
-    <div class="column is-one-third" *ngFor="let image of gallery.images">
+    <div class="column is-one-quarter" *ngFor="let image of gallery.images">
         <div class="card">
           <div class="card-content">
             <figure class="image is-3by2">

@@ -25,7 +25,7 @@ import { ScrollToComponent } from './components/scroll-to/scroll-to.component';
     ScrollToComponent]
 })
 export class SharedModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<SharedModule> {
     return {
       ngModule: SharedModule,
     };

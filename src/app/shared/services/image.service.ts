@@ -16,7 +16,9 @@ export class ImagesService {
 
   getGalleries() {
     return this.http.get(this.imageUrl).pipe(
-      map((data: any) => data.map(item => new Gallery(item))),
+      map((data: any) => {
+        return data.map(item => new Gallery(item))
+      }),
       catchError(this.handleError));
   }
 
