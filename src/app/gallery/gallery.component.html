@@ -1,38 +1,36 @@
 <section id="gallery" class="m-1" *ngIf="gallery">
-<div class="container is-fluid">
-  <div class="is-flex">
-    <div class="flex-fill">
-      <button class="button is-dark-blue is-outlined" [routerLink]="['/home']">Back</button>
-    </div>
-    <div class="buttons has-addons is-inline">
-      <span class="button" [ngClass]="{'is-dark-blue is-focused': activeGallery === gallery.id}" *ngFor="let gallery of galleries; let i = index" (click)="onGalleryClick(gallery.id, i)">
-        <i class="fa {{gallery.icon}}" *ngIf="gallery.icon"></i>
-      </span>
-    </div>
+<div class="is-flex">
+  <div class="flex-fill">
+    <button class="button is-dark-blue is-outlined" [routerLink]="['/home']">Back</button>
   </div>
-  <article class="message is-dark-blue mt-3">
-    <div class="message-body">
-      <h2 class="title is-size-1-desktop is-size-3-mobile">{{gallery.name}}</h2>
-      <p class="subtitle is-size-5-desktop">
-       {{gallery.description}}
-      </p>
-      <!-- <p *ngIf="gallery.external_url">
-        <a class="button is-dark-blue" href="{{gallery.external_url}}" target="_">Check it out</a>
-      </p> -->
-    </div>
-  </article>
-  <div class="columns is-multiline is-vcentered mt-3">
-    <div class="column is-one-quarter" *ngFor="let image of gallery.images">
-        <div class="card">
-          <div class="card-content">
-            <figure class="image is-3by2">
-              <img src="{{image.url}}" alt="Placeholder image">
-            </figure>
-          </div>
-          <footer class="card-footer">
-            <a class="card-footer-item" (click)="onViewClick(image)">{{image.view}}</a>
-          </footer>
-      </div>
+  <div class="buttons has-addons is-inline">
+    <span class="button" [ngClass]="{'is-dark-blue is-focused': activeGallery === gallery.id}" *ngFor="let gallery of galleries; let i = index" (click)="onGalleryClick(gallery.id, i)">
+      <i class="fa {{gallery.icon}}" *ngIf="gallery.icon"></i>
+    </span>
+  </div>
+</div>
+<article class="message is-dark-blue mt-3">
+  <div class="message-body">
+    <h2 class="title is-size-1-desktop is-size-3-mobile">{{gallery.name}}</h2>
+    <p class="subtitle is-size-5-desktop">
+      {{gallery.description}}
+    </p>
+    <!-- <p *ngIf="gallery.external_url">
+      <a class="button is-dark-blue" href="{{gallery.external_url}}" target="_">Check it out</a>
+    </p> -->
+  </div>
+</article>
+<div class="columns is-multiline is-vcentered mt-3">
+  <div class="column is-one-quarter" *ngFor="let image of gallery.images">
+      <div class="card">
+        <div class="card-content">
+          <figure class="image is-3by2">
+            <img src="{{image.url}}" alt="Placeholder image">
+          </figure>
+        </div>
+        <footer class="card-footer">
+          <a class="card-footer-item" (click)="onViewClick(image)">{{image.view}}</a>
+        </footer>
     </div>
   </div>
 </div>
